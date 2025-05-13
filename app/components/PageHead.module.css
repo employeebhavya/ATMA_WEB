@@ -1,0 +1,54 @@
+/* PageHead.module.css */
+.PageHead {
+  position: relative;
+  padding: clamp(40px, 5vh, 5vh) 0;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.PageHeadRow {
+  width: 100%;
+  height: calc(70vh - clamp(40px, 5vh, 5vh));
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: clamp(20px, 2vh, 2vh);
+}
+.PageHeadCol {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(20px, 2vh, 2vh);
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  column-gap: clamp(5px, 0.5vw, 0.5vw);
+}
+.breadcrumb p {
+  color: var(--primary);
+}
+.mobileImg {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .mobileImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .PageHead,
+  .PageHeadRow {
+    background: none;
+    height: auto;
+    min-height: auto;
+  }
+  .PageHeadCol {
+    width: 100%;
+  }
+}

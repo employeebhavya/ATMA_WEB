@@ -1,0 +1,45 @@
+.annualConvention {
+  position: relative;
+  padding: clamp(60px, 12vh, 12vh) 0;
+  background-color: var(--color-white);
+}
+.annualConventionRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: clamp(20px, 2vw, 2vw);
+  row-gap: clamp(30px, 3vh, 3vh);
+}
+.annualConventionCol {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(12px, 1vh, 1vh);
+  position: relative;
+}
+.annualConventionCol .annualConventionImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.annualConventionCol h3 {
+  text-transform: capitalize;
+}
+.annualConventionCol .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--primary);
+  color: white;
+  padding: clamp(10px, 1vw, 1vw);
+}
+
+@media only screen and (max-width: 1024px) {
+  .annualConventionRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .annualConventionRow {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

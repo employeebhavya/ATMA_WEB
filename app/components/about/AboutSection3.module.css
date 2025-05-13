@@ -1,0 +1,11 @@
+.AboutSection3 {
+  position: relative;
+  padding: clamp(60px, 7vh, 7vh) 0;
+  background-color: var(--background-1);
+}
+.as3Content {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(20px, 2vh, 2vh);
+  margin-bottom: 30px;
+}

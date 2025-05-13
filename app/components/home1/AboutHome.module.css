@@ -1,0 +1,96 @@
+.AboutHome {
+  position: relative;
+  padding: clamp(60px, 12vh, 12vh) 0;
+  background-color: var(--color-white);
+  background-image: url("../../../public/home/about-bg.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.ahRow1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: clamp(10px, 7vh, 7vh);
+}
+.ahInnerRow {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: clamp(20px, 2vw, 2vw);
+}
+.ahCol {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(12px, 1vh, 1vh);
+  background-color: #f6f5f1;
+  padding: clamp(20px, 2vw, 2vw);
+  transition: all 0.3s ease;
+}
+.ahInnerRow .ahCol:nth-child(1) {
+  background-color: var(--primary);
+}
+.ahInnerRow .ahCol:nth-child(1) h4,
+.ahInnerRow .ahCol:nth-child(1) p {
+  color: var(--color-white);
+}
+.ahRow2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: clamp(20px, 2vw, 2vw);
+  margin-top: clamp(40px, 8vh, 8vh);
+  align-items: center;
+}
+.ahRow2Col {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(20px, 5vh, 5vh);
+  align-items: flex-start;
+}
+.ahRow2Col img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.ahRow2ColInner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: clamp(20px, 1vw, 1vw);
+  row-gap: clamp(20px, 2vh, 2vh);
+}
+.ahRow2ColInnerTitle {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(10px, 1vh, 1vh);
+}
+.ahRow2ColInnerContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(10px, 1vh, 1vh);
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 1024px) {
+  .ahInnerRow {
+    width: 100%;
+  }
+  .ahRow2ColInner {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ahRow2 {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  .ahInnerRow {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .ahRow1 {
+    padding-bottom: 0;
+  }
+}

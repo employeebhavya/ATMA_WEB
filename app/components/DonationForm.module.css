@@ -1,0 +1,104 @@
+/* Your existing styles from the initial code */
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.donationForm {
+  position: relative;
+  padding: clamp(60px, 7vh, 7vh) 0;
+  background-color: var(--color-white);
+}
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffe8e8;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.amountOptions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.amountButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9dcdc;
+  color: var(--primary);
+}
+
+.amountButton.active,
+.amountButton:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.customInput {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.frequency,
+.paymentMethod {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.personalInfo,
+.upiSection {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: var(--color-black);
+}
+
+.paymentStatus {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .formContainer {
+    align-items: flex-start;
+  }
+}

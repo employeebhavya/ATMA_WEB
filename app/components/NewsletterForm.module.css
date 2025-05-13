@@ -1,0 +1,52 @@
+/* NewsletterForm.module.css */
+
+.NewsletterForm {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.NewsletterForm .input {
+  flex: 1;
+  padding: 14px;
+  font-size: clamp(0.875rem, 1vw, 1vw);
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  color: #333;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.NewsletterForm .button {
+  padding: 14px;
+  font-size: clamp(0.875rem, 1vw, 1vw);
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.NewsletterForm .button:hover {
+  background-color: var(--secondary);
+  color: var(--color-black);
+}
+.successMessage {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
