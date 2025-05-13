@@ -1,13 +1,13 @@
 .CharitableContent {
   position: relative;
-  padding: clamp(60px, 7vh, 7vh) 0;
+  padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
 }
 .CharitableContentRow {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: clamp(40px, 4vw, 4vw);
-  row-gap: clamp(40px, 4vh, 4vh);
+  row-gap: clamp(40px, 7vh, 7vh);
 }
 .CharitableContentCol {
   display: flex;

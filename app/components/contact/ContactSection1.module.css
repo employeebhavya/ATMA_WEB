@@ -1,6 +1,6 @@
 .contactSection1 {
   position: relative;
-  padding: clamp(60px, 7vh, 7vh) 0;
+  padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
 }
 .contactSection1Row {

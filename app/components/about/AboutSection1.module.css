@@ -35,6 +35,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: clamp(20px, 2vw, 2vw);
+  padding: clamp(20px, 5vh, 5vh) 0;
 }
 .AboutSection1Col3 {
   display: grid;

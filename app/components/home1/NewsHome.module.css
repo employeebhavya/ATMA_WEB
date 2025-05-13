@@ -1,6 +1,6 @@
 .NewsHome {
   position: relative;
-  padding: clamp(60px, 7vh, 7vh) 0;
+  padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--background);
   background-image: url("../../../public/home/news-bg.png");
   background-position: left top;
@@ -48,11 +48,17 @@
 }
 .nhCol2Inner2Inner {
   display: grid;
-  grid-template-columns: 1.4fr 2fr;
+  grid-template-columns: auto 1fr;
   column-gap: clamp(20px, 2vw, 2vw);
   align-items: center;
 }
 
+.nhCol2Inner2Inner img {
+  width: 15.8vw;
+}
+.nhCol2Inner2InnerContent h4 {
+  margin-bottom: 12px;
+}
 @media only screen and (max-width: 768px) {
   .nhCol1Inner {
     width: 100%;
@@ -60,5 +66,8 @@
   .nhCol2 {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 50px;
+  }
+  .nhCol2Inner2Inner img {
+    width: 180px;
   }
 }

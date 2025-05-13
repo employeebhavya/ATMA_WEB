@@ -1,13 +1,13 @@
 .BlogMain {
   position: relative;
-  padding: clamp(60px, 7vh, 7vh) 0;
+  padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
 }
 .BlogMainRow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: clamp(20px, 2vw, 2vw);
-  row-gap: clamp(40px, 4vh, 4vh);
+  row-gap: clamp(40px, 7vh, 7vh);
 }
 .BlogMainCol {
   display: flex;

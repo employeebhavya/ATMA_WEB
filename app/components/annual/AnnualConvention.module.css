@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: clamp(20px, 2vw, 2vw);
-  row-gap: clamp(30px, 3vh, 3vh);
+  row-gap: clamp(30px, 7vh, 7vh);
 }
 .annualConventionCol {
   display: flex;
