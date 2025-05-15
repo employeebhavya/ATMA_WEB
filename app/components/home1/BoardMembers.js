@@ -84,9 +84,7 @@ function BoardMembers() {
         <div className={styles.bmRow}>
           <div className={styles.bmCol1}>
             <div className={styles.bmCol1Inner}>
-              <p className="!text-sm font-light tracking-[3px]">
-                BOARD MEMBERS
-              </p>
+              <p className="font-light tracking-[3px]">BOARD MEMBERS</p>
               <h3>Our Board Members</h3>
               <p>
                 The following are our notable board members who contributed

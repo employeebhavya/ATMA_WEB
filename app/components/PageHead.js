@@ -20,12 +20,11 @@ function PageHead({
       <div className="container">
         <div className={styles.PageHeadRow}>
           <div className={styles.PageHeadCol}>
-            <div className={styles.breadcrumb}>
+            {/* <div className={styles.breadcrumb}>
               <Link href={link || "/"}>{title}</Link> <HiChevronRight />{" "}
               <p>{subtitle}</p>
-            </div>
-            <h2>{subtitle}</h2>
-            <p>{description}</p>
+            </div> */}
+            <h1 className="text-shadow-md">{subtitle}</h1>
           </div>
           <Image
             className={styles.mobileImg}

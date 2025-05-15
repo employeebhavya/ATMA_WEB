@@ -10,7 +10,7 @@ function WhatWeDo() {
         <div className={styles.wwdRow}>
           <div className={styles.wwdCol1}>
             <div className={styles.headContent}>
-              <p className="!text-sm font-light tracking-[3px]">WHAT WE DO</p>
+              <p className="font-light tracking-[3px]">WHAT WE DO</p>
               <h3>Health, Hope, and Humanity</h3>
             </div>
             <div className={styles.wwdIconBox}>

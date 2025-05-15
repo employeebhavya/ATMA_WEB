@@ -25,7 +25,7 @@ function President() {
             </div>
           </div>
           <div className={styles.presidentCol2}>
-            <p className="!text-sm font-light tracking-[3px]">OUR MESSAGE</p>
+            <p className="font-light tracking-[3px]">OUR MESSAGE</p>
             <h3>Strength in Service: A Message from the President</h3>
             <div className={styles.presidentName}>
               <h4>Dr. Rajammal Jayakumar</h4>

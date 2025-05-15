@@ -7,6 +7,18 @@ function AtmaChapterSection1() {
   return (
     <section className={styles.AtmaChapterSection1}>
       <div className="container">
+        <div className="mb-14 flex flex-col md:flex-row gap-4 md:gap-8">
+          <h3 className="md:min-w-[35%]">
+            A Celebration of Knowledge, Culture, and Community
+          </h3>
+          <p>
+            The American Tamil Medical Association (ATMA) has established
+            multiple chapters across the United States to strengthen its network
+            and broaden its impact. Each chapter serves as a local hub where
+            Tamil healthcare professionals can connect, collaborate, and
+            contribute to community health initiatives.
+          </p>
+        </div>
         <div className={styles.AtmaChapterSection1Row}>
           <div className={styles.AtmaChapterSection1Col}>
             <Image src="/atmac/1.png" alt="Chapter" width={600} height={600} />

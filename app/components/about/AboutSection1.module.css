@@ -2,9 +2,9 @@
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
-  background-image: url("../../../public/home/about-bg.png");
+  /* background-image: url("../../../public/home/about-bg.png");
   background-position: right top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   padding-bottom: 0;
 }
 .AboutSection1Row {

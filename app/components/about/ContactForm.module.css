@@ -34,14 +34,14 @@
 }
 
 .button {
-  padding: clamp(8px, 1vw, 1vw);
+  padding: clamp(8px, 1vw, 1vw) clamp(20px, 2vw, 2vw);
   background-color: var(--secondary);
   color: #333;
   border: none;
-  border-radius: clamp(3px, 0.5vw, 0.5vw);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: fit-content;
 }
 
 .button:hover {

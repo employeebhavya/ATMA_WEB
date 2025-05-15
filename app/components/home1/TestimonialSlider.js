@@ -64,7 +64,7 @@ function TestimonialSlider() {
       <div className="container">
         <div className={styles.testiRow}>
           <div className={styles.testiCol}>
-            <p>TESTIMONIALS</p>
+            <p className="font-light tracking-[3px]">TESTIMONIALS</p>
             <h3>Sharing Hope, Spreading Love.</h3>
           </div>
           <div className={styles.slider}>

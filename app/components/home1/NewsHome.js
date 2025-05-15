@@ -28,9 +28,7 @@ function NewsHome() {
         <div className={styles.nhRow}>
           <div className={styles.nhCol1}>
             <div className={styles.nhCol1Inner}>
-              <p className="!text-sm font-light tracking-[3px]">
-                NEWS & EVENTS
-              </p>
+              <p className="font-light tracking-[3px]">NEWS & EVENTS</p>
               <h3>Our Latest News</h3>
               <p>
                 Stay informed with the latest updates from the American Tamil

@@ -15,11 +15,12 @@ function AboutSection4() {
               height={600}
             />
             <div className={styles.contentab4}>
-              <p>GET IN TOUCH</p>
-              <h3>
-                Where Faith Flourishes, Love Abounds Lifting Spirits, Serving
-                Hearts
-              </h3>
+              <p className="!text-sm font-light tracking-[3px]">GET IN TOUCH</p>
+              <h4 className="mt-3">
+                Uniting Tamil Healthcare Professionals Worldwide to Advance
+                Medical Excellence, Empower Communities, and Create a Lasting
+                Impact Through Compassion, Education, and Service.
+              </h4>
             </div>
           </div>
           <div className={styles.AboutSection4Col2}>

@@ -166,7 +166,13 @@ function ThirukuralSlider() {
               </p>
             </div>
           </div>
-          <Image width={50} height={100} src={"/quote.svg"} alt={"quote"} />
+          <Image
+            className={styles.carouselImage}
+            width={50}
+            height={100}
+            src={"/quote.svg"}
+            alt={"quote"}
+          />
         </div>
       </div>
     </section>

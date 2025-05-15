@@ -82,6 +82,20 @@ function AnnualConvention() {
   return (
     <section className={styles.annualConvention}>
       <div className="container">
+        <div className="mb-14 flex flex-col md:flex-row gap-4 md:gap-8">
+          <h3 className="md:min-w-[35%]">
+            A Celebration of Knowledge, Culture, and Community
+          </h3>
+          <p>
+            The ATMA Annual Convention is a landmark event that unites Tamil
+            healthcare professionals across the U.S. and beyond. This gathering
+            fosters medical excellence, networking, and cultural pride.
+            Attendees engage in expert-led discussions, discover the latest
+            advancements in healthcare, and celebrate Tamil heritage through
+            vibrant performances. Join us to expand your knowledge, connect with
+            pioneers, and be part of a thriving professional community.
+          </p>
+        </div>
         <div className={styles.annualConventionRow}>
           {AnnualData.map((item) => (
             <div className={styles.annualConventionCol} key={item.id}>
@@ -92,9 +106,7 @@ function AnnualConvention() {
                 width={300}
                 height={300}
               />
-              <h4>
-                <strong> {item.title}</strong>
-              </h4>
+              <h4 className="font-semibold">{item.title}</h4>
               <p>{item.desc}</p>
               {/* <Link href={item.link}>
                 <Button

@@ -38,7 +38,7 @@ function AboutHome() {
           <div className={styles.ahRow2Col}>
             <div className={styles.ahRow2ColInner}>
               <div className={styles.ahRow2ColInnerTitle}>
-                <p className="!text-sm font-light tracking-[3px]">ABOUT US</p>
+                <p className="font-light tracking-[3px]">ABOUT US</p>
                 <h3>Empowering Healthcare, Embracing Heritage</h3>
               </div>
               <div className={styles.ahRow2ColInnerContent}>

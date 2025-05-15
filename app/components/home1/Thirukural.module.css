@@ -46,6 +46,9 @@
 .animateSlide {
   animation: slideAnimation 0.5s ease forwards;
 }
+.carouselImage {
+  width: clamp(40px, 4vw, 4vw);
+}
 
 @keyframes slideAnimation {
   0% {

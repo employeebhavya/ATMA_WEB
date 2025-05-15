@@ -7,12 +7,12 @@ function AboutSection2() {
       <div className="container">
         <div className={styles.AboutSection2Row}>
           <div className={styles.AboutSection2Col}>
-            <h3>What We Do</h3>
+            <h3>Our Journey: Building Unity and Impact</h3>
 
             <div className={styles.numberBox}>
               <h3>01</h3>
               <div>
-                <h4>The Beginning</h4>
+                <h4 className="mb-1">The Beginning</h4>
                 <p>
                   ATMA was founded to build meaningful partnerships with
                   organizations that share our vision of advancing healthcare
@@ -23,7 +23,7 @@ function AboutSection2() {
             <div className={styles.numberBox}>
               <h3>02</h3>
               <div>
-                <h4>Our Growth</h4>
+                <h4 className="mb-1">Our Growth</h4>
                 <p>
                   We unite American Tamil physicians and allied healthcare
                   professionals under one platform to foster fellowship,
@@ -34,7 +34,7 @@ function AboutSection2() {
             <div className={styles.numberBox}>
               <h3>03</h3>
               <div>
-                <h4>Our Present Mission</h4>
+                <h4 className="mb-1">Our Present Mission</h4>
                 <p>
                   We provide a space for our members to grow personally and
                   professionally while upholding our cultural, social, and
