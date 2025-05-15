@@ -34,7 +34,15 @@ function President() {
           </div>
           <div className={styles.presidentCol2}>
             <Image
+              className="hidden md:block"
               src="/home/bm/president2.png"
+              alt="President"
+              width={500}
+              height={500}
+            />
+            <Image
+              className="md:hidden"
+              src="/home/bm/president2.jpg"
               alt="President"
               width={500}
               height={500}
