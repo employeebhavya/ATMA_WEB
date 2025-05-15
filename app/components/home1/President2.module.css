@@ -58,4 +58,7 @@
   .presidentRow > div:nth-child(2) {
     width: 100%;
   }
+  .President {
+    padding-top: 60px;
+  }
 }

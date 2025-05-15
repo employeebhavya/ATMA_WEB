@@ -111,4 +111,7 @@
   .socialIcons img {
     width: 20px;
   }
+  .footer {
+    padding: 60px 0;
+  }
 }

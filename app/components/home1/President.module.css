@@ -60,4 +60,7 @@
     right: 0;
     width: clamp(150px, 11vw, 11vw);
   }
+  .President {
+    padding: 60px 0;
+  }
 }
