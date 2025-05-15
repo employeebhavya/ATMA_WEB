@@ -10,10 +10,10 @@
   align-items: center;
 }
 .presidentRow > div:nth-child(1) {
-  width: 65%;
+  width: 60%;
 }
 .presidentRow > div:nth-child(2) {
-  width: 35%;
+  width: 40%;
 }
 .presidentCol1 img,
 .presidentCol2 img {

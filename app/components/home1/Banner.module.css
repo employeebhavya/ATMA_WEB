@@ -39,12 +39,12 @@
 }
 .content h1 {
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: clamp(15px, 1vh, 1vh);
   font-size: 3vw;
 }
 .content p {
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: clamp(15px, 2vh, 2vh);
   font-size: 1vw;
 }
 .title {

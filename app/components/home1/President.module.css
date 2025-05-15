@@ -1,8 +1,7 @@
 .President {
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
-  background-color: var(--color-white);
-  padding-bottom: 0;
+  background-color: #f6f5f1;
 }
 .presidentRow {
   display: grid;
@@ -16,14 +15,15 @@
 .bannerRed {
   background-color: var(--primary);
   position: absolute;
-  top: 70%;
+  top: 85%;
   right: -10%;
   padding: clamp(10px, 1vw, 1vw);
-  width: clamp(150px, 11vw, 11vw);
+  width: clamp(150px, 13vw, 13vw);
   text-align: center;
 }
-.bannerRed p {
+.bannerRed h6 {
   color: #fff;
+  font-size: clamp(16px, 1.3vw, 1.3vw);
 }
 .presidentCol1 img {
   width: 100%;

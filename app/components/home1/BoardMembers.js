@@ -84,7 +84,9 @@ function BoardMembers() {
         <div className={styles.bmRow}>
           <div className={styles.bmCol1}>
             <div className={styles.bmCol1Inner}>
-              <p>BOARD MEMBERS</p>
+              <p className="!text-sm font-light tracking-[3px]">
+                BOARD MEMBERS
+              </p>
               <h3>Our Board Members</h3>
               <p>
                 The following are our notable board members who contributed
@@ -99,7 +101,7 @@ function BoardMembers() {
                 {BoardMemebrs.map((bm, index) => (
                   <CarouselItem
                     key={index}
-                    className={`${styles.bmCol2Inner} md:pl-4 md:basis-1/3`}
+                    className={`${styles.bmCol2Inner} md:pl-4 md:basis-1/4`}
                   >
                     <Image
                       className={styles.bmImg}

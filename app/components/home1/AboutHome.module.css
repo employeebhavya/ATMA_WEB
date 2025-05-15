@@ -52,7 +52,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: clamp(20px, 2vw, 2vw);
-  margin-top: clamp(40px, 8vh, 8vh);
   align-items: center;
 }
 .ahRow2Col {

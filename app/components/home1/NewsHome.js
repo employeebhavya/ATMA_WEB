@@ -28,8 +28,10 @@ function NewsHome() {
         <div className={styles.nhRow}>
           <div className={styles.nhCol1}>
             <div className={styles.nhCol1Inner}>
-              <p>NEWS AND EVENTS</p>
-              <h3>Our latest News</h3>
+              <p className="!text-sm font-light tracking-[3px]">
+                NEWS & EVENTS
+              </p>
+              <h3>Our Latest News</h3>
               <p>
                 Stay informed with the latest updates from the American Tamil
                 Medical Association (ATMA).

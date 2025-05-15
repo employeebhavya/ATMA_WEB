@@ -2,9 +2,9 @@
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
-  background-image: url("../../../public/home/bm-bg.png");
+  /* background-image: url("../../../public/home/bm-bg.png");
   background-position: 10% top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .bmRow {
   display: flex;

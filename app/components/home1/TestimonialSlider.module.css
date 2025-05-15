@@ -2,7 +2,6 @@
   position: relative;
   padding: clamp(60px, 15vh, 15vh) 0;
   background-color: var(--color-white);
-  padding-top: 0;
 }
 
 .testiRow {

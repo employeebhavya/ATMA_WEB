@@ -1,11 +1,10 @@
 .NewsHome {
   position: relative;
   padding: clamp(60px, 15vh, 15vh) 0;
-  background-color: var(--background);
+  background-color: #f6f5f1;
   background-image: url("../../../public/home/news-bg.png");
   background-position: left top;
   background-repeat: no-repeat;
-  padding-top: 0;
 }
 .nhRow {
   display: flex;

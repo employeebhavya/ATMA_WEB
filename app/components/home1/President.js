@@ -14,12 +14,19 @@ function President() {
               height={500}
             />
             <div className={styles.bannerRed}>
-              <p>Service to human is service to God</p>
+              <h6>Service to human is service to God</h6>
+              <Image
+                className="absolute -top-4 !w-8 !h-auto shadow-lg"
+                src={"/quote1.svg"}
+                alt="quote"
+                width={50}
+                height={42}
+              />
             </div>
           </div>
           <div className={styles.presidentCol2}>
             <p className="!text-sm font-light tracking-[3px]">OUR MESSAGE</p>
-            <h3>President’s Message</h3>
+            <h3>Strength in Service: A Message from the President</h3>
             <div className={styles.presidentName}>
               <h4>Dr. Rajammal Jayakumar</h4>
               <p>President of ATMA</p>
