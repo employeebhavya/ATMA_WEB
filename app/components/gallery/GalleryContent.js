@@ -7,7 +7,9 @@ function GalleryContent() {
         <div className={styles.GalleryContentRow}>
           <div className={styles.GalleryContentCol}>
             <p>GALLERY</p>
-            <h3>Our Story in Action: A Gallery of Service and Unity</h3>
+            <h3>
+              Our Story in Action: A Gallery of <br></br>Service and Unity
+            </h3>
           </div>
           <p>
             Each image tells a story of collaboration, care, and positive impact
