@@ -6,7 +6,6 @@ function GalleryContent() {
       <div className="container">
         <div className={styles.GalleryContentRow}>
           <div className={styles.GalleryContentCol}>
-            <p>GALLERY</p>
             <h3>
               Our Story in Action: A Gallery of <br></br>Service and Unity
             </h3>
