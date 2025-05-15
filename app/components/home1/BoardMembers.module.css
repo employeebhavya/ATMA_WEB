@@ -76,4 +76,7 @@
   .bmCol2Inner {
     row-gap: clamp(10px, 1vh, 1vh);
   }
+  .BoardMembers {
+    padding-bottom: 0 !important;
+  }
 }

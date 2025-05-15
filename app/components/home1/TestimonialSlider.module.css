@@ -78,4 +78,7 @@
     flex-direction: column;
     align-items: baseline;
   }
+  .testimonialSection {
+    padding: 60px 0 !important;
+  }
 }
