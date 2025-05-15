@@ -7,9 +7,7 @@ function GalleryContent() {
         <div className={styles.GalleryContentRow}>
           <div className={styles.GalleryContentCol}>
             <p>GALLERY</p>
-            <h3>
-              Lifting Spirits, Serving Hearts<br></br> christ your gallery
-            </h3>
+            <h3>Our Story in Action: A Gallery of Service and Unity</h3>
           </div>
           <p>
             Each image tells a story of collaboration, care, and positive impact
