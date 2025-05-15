@@ -8,11 +8,13 @@ import BoardMembers from "./components/home1/BoardMembers";
 import NewsHome from "./components/home1/NewsHome";
 import TestimonialSlider from "./components/home1/TestimonialSlider";
 import ThirukuralSlider from "./components/home1/Thirukural";
+import Banner from "./components/home1/Banner";
 
 function Home() {
   return (
     <>
-      <SliderHome />
+      <Banner />
+      {/* <SliderHome /> */}
       <ThirukuralSlider />
       <AboutHome />
       <WhatWeDo />

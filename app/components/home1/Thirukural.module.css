@@ -1,17 +1,25 @@
 .thirukuralSection {
   position: relative;
   padding: clamp(60px, 10vh, 10vh) 0;
-  background-color: var(--background-1);
+  background-color: #fff;
   display: flex;
   justify-content: center;
+  padding-bottom: 0;
 }
-
+.content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .slider {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: clamp(1rem, 2vw, 2rem);
   max-width: 650px;
+  flex-direction: column;
 }
 
 .slide {
@@ -54,7 +62,6 @@
   .slider,
   .slide {
     flex-direction: column;
-    align-items: baseline;
   }
   .title {
     font-size: 18px !important;

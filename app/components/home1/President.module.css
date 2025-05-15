@@ -2,12 +2,28 @@
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
+  padding-bottom: 0;
 }
 .presidentRow {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: clamp(40px, 4vw, 4vw);
+  grid-template-columns: 1.1fr 2fr;
+  column-gap: clamp(40px, 5vw, 5vw);
   align-items: center;
+}
+.presidentCol1 {
+  position: relative;
+}
+.bannerRed {
+  background-color: var(--primary);
+  position: absolute;
+  top: 70%;
+  right: -10%;
+  padding: clamp(10px, 1vw, 1vw);
+  width: clamp(150px, 11vw, 11vw);
+  text-align: center;
+}
+.bannerRed p {
+  color: #fff;
 }
 .presidentCol1 img {
   width: 100%;
@@ -18,31 +34,30 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: clamp(10px, 0.5vh, 0.5vh);
-  padding-top: 30px;
+  row-gap: 2vh;
 }
-.presidentCol2 p {
-  margin-bottom: 5px;
+.presidentName {
+  position: relative;
+  margin-left: 10px;
 }
-.namehead,
-.deshead {
-  font-weight: 600;
+.presidentName::before {
+  content: "";
+  background-color: var(--primary);
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 3px;
+  height: 85%;
 }
-
-@media only screen and (min-width: 1201px) {
-  .presidentCol1 img {
-    margin-top: -10vh;
-  }
-  .President {
-    padding-top: 0;
-  }
-}
-
 @media only screen and (max-width: 800px) {
-  .President {
-    padding-bottom: 0;
-  }
   .presidentRow {
     grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .bannerRed {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: clamp(150px, 11vw, 11vw);
   }
 }

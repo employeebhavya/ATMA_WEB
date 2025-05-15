@@ -10,8 +10,8 @@ function WhatWeDo() {
         <div className={styles.wwdRow}>
           <div className={styles.wwdCol1}>
             <div className={styles.headContent}>
-              <p>WHAT WE DO</p>
-              <h3>American Tamil Medical Association</h3>
+              <p className="!text-sm font-light tracking-[3px]">WHAT WE DO</p>
+              <h3>Health, Hope, and Humanity</h3>
             </div>
             <div className={styles.wwdIconBox}>
               <div className={styles.wwdIconBoxIcon}>
@@ -23,7 +23,7 @@ function WhatWeDo() {
                 />
               </div>
               <div className={styles.wwdIconBoxContent}>
-                <h4>Vision</h4>
+                <h4 className="mb-2">Vision</h4>
                 <p>
                   ATMA envisions accessible healthcare for all, uniting Tamil
                   healthcare professionals to drive global medical excellence
@@ -41,7 +41,7 @@ function WhatWeDo() {
                 />
               </div>
               <div className={styles.wwdIconBoxContent}>
-                <h4>Mission</h4>
+                <h4 className="mb-2">Mission</h4>
                 <p>
                   We strive to improve healthcare access, support underserved
                   communities, and foster professional growth while upholding
@@ -59,7 +59,7 @@ function WhatWeDo() {
                 />
               </div>
               <div className={styles.wwdIconBoxContent}>
-                <h4>Donate</h4>
+                <h4 className="mb-2">Donate</h4>
                 <p>
                   Your support helps provide medical aid, health education, and
                   outreach programs—creating a lasting impact and a healthier

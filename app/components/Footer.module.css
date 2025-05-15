@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  padding: clamp(40px, 5vh, 5vh) 0;
+  padding: clamp(40px, 12vh, 12vh) 0;
   background-color: var(--color-white);
 }
 .footerRow1 {
@@ -15,7 +15,7 @@
   margin: clamp(30px, 4vh, 4vh) 0;
 }
 .footerLogo {
-  width: clamp(200px, 15vw, 15vw);
+  width: clamp(200px, 17vw, 17vw);
 }
 .footerRow2Col1 {
   display: flex;
@@ -23,7 +23,7 @@
   row-gap: clamp(20px, 2vh, 2vh);
 }
 .footerRow2Col1 h3 {
-  font-size: clamp(22px, 1.5vw, 1.5vw);
+  font-size: clamp(22px, 1.2vw, 1.2vw);
 }
 .socialIcons {
   display: flex;

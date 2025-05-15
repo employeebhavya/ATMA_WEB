@@ -2,9 +2,9 @@
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
-  background-image: url("../../../public/home/about-bg.png");
+  /* background-image: url("../../../public/home/about-bg.png");
   background-position: left bottom;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .ahRow1 {
   display: flex;
@@ -12,7 +12,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding-bottom: clamp(10px, 7vh, 7vh);
+  padding-bottom: clamp(20px, 12vh, 12vh);
 }
 .ahInnerRow {
   width: 75%;
@@ -27,9 +27,22 @@
   background-color: #f6f5f1;
   padding: clamp(20px, 2vw, 2vw);
   transition: all 0.3s ease;
+  text-align: center;
+}
+.ahCol p {
+  font-size: clamp(14px, 0.9vw, 0.9vw);
 }
 .ahInnerRow .ahCol:nth-child(1) {
   background-color: var(--primary);
+}
+.ahInnerRow .ahCol:nth-child(2):hover,
+.ahInnerRow .ahCol:nth-child(3):hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+.ahInnerRow .ahCol:nth-child(2):hover p,
+.ahInnerRow .ahCol:nth-child(3):hover p {
+  color: #fff;
 }
 .ahInnerRow .ahCol:nth-child(1) h4,
 .ahInnerRow .ahCol:nth-child(1) p {
@@ -70,7 +83,9 @@
   row-gap: clamp(10px, 1vh, 1vh);
   align-items: flex-end;
 }
-
+.ahRow2ColInnerContent p {
+  font-size: clamp(14px, 0.9vw, 0.9vw);
+}
 @media only screen and (max-width: 1024px) {
   .ahInnerRow {
     width: 100%;

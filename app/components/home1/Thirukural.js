@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styles from "./Thirukural.module.css";
+import Image from "next/image";
 
 const thirukurals = [
   {
@@ -165,6 +166,7 @@ function ThirukuralSlider() {
               </p>
             </div>
           </div>
+          <Image width={50} height={100} src={"/quote.svg"} alt={"quote"} />
         </div>
       </div>
     </section>

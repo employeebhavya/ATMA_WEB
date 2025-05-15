@@ -40,7 +40,7 @@
   font-weight: bold;
 }
 .logo {
-  width: clamp(200px, 15vw, 15vw);
+  width: clamp(200px, 17vw, 17vw);
 }
 
 /* Donation button */

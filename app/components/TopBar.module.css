@@ -9,8 +9,9 @@
   align-items: center;
   width: 100%;
 }
-.topbarContent p {
-  font-size: clamp(14px, 0.8vw, 0.8vw);
+.topbarContent p,
+.topbarContent a {
+  font-size: clamp(14px, 0.8vw, 00.8vw);
 }
 .socialTopbar,
 .socialIcons {

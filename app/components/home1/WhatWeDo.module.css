@@ -38,12 +38,6 @@
   width: 4vw;
 }
 
-@media only screen and (min-width: 1201px) {
-  .WhatWeDo {
-    padding-bottom: clamp(60px, 20vh, 20vh);
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .wwdRow {
     grid-template-columns: 1fr;

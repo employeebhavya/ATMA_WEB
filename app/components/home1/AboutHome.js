@@ -38,26 +38,29 @@ function AboutHome() {
           <div className={styles.ahRow2Col}>
             <div className={styles.ahRow2ColInner}>
               <div className={styles.ahRow2ColInnerTitle}>
-                <p>ABOUT US</p>
-                <h3>
-                  ATMA-CF Foundation&#39;s Charitable Mission Internationally
-                </h3>
+                <p className="!text-sm font-light tracking-[3px]">ABOUT US</p>
+                <h3>Empowering Healthcare, Embracing Heritage</h3>
               </div>
               <div className={styles.ahRow2ColInnerContent}>
-                <p style={{ display: "flex", alignItems: "baseline" }}>
+                <p
+                  className="!text-[#6D6D6D]"
+                  style={{ display: "flex", alignItems: "baseline" }}
+                >
                   <sup style={{ marginRight: "10px", width: "85px" }}>
-                    <RiDoubleQuotesL size={25} />
+                    <RiDoubleQuotesL size={25} color="#a4a4a4" />
                   </sup>
-                  <span>
-                    Nowhere is wisdom more necessary than in the guidance of
-                    charitable impulses. Meaning well is only half our duty;
-                    Thinking right is the other, and equally important, half.
+                  <span className="text-justify">
+                    The compassion of a Tamilian knows no bounds; what began as
+                    a small effort in America has now united hundreds of medical
+                    professionals, becoming a pillar of humanity. Our knowledge
+                    and care must always serve as noble acts that give life to
+                    the underserved.
                   </span>
                 </p>
-                <p className="flex">
-                  Samuel Gridley Howe
+                <p className="flex !text-[#6D6D6D]">
+                  - ATMA
                   <sub style={{ marginLeft: "10px" }}>
-                    <RiDoubleQuotesR size={25} />
+                    <RiDoubleQuotesR size={15} color="#a4a4a4" />
                   </sub>
                 </p>
               </div>
