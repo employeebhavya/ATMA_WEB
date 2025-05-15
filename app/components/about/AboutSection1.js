@@ -5,18 +5,6 @@ function AboutSection1() {
   return (
     <section className={styles.AboutSection1}>
       <div className="container">
-        <div className="mb-14 flex flex-col md:flex-row gap-4 md:gap-8">
-          <h3 className="md:min-w-[35%]">
-            A Celebration of Knowledge, Culture, and Community
-          </h3>
-          <p>
-            In January 2005, a group of ten Tamil physicians in the United
-            States established the American Tamil Medical Association (ATMA).
-            Now there are more than 800 physicians and allied healthcare
-            professionals as members and the membership is growing. It is a
-            501(c) 3, IRS tax exempt, charitable organization.
-          </p>
-        </div>
         <div className={styles.AboutSection1Row}>
           <div className={styles.AboutSection1Col}>
             <div className={styles.AboutSection1ColInner}>

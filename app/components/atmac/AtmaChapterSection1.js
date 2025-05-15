@@ -7,7 +7,7 @@ function AtmaChapterSection1() {
   return (
     <section className={styles.AtmaChapterSection1}>
       <div className="container">
-        <div className="mb-14 flex flex-col md:flex-row gap-4 md:gap-8">
+        <div className="mb-own flex flex-col md:flex-row gap-4 md:gap-8">
           <h3 className="md:min-w-[35%]">
             A Celebration of Knowledge, Culture, and Community
           </h3>

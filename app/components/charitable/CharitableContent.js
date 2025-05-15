@@ -52,7 +52,7 @@ function CharitableContent() {
   return (
     <section className={styles.CharitableContent}>
       <div className="container">
-        <div className="mb-14 flex flex-col md:flex-row gap-4 md:gap-8">
+        <div className="mb-own flex flex-col md:flex-row gap-4 md:gap-8">
           <h3 className="md:min-w-[35%]">
             ATMA’s Charitable Impact: Reaching Those in Need
           </h3>

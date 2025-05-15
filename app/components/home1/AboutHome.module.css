@@ -104,7 +104,4 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
   }
-  .ahRow1 {
-    padding-bottom: 0;
-  }
 }
