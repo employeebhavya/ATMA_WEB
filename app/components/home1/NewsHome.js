@@ -5,7 +5,7 @@ import Button from "../Button";
 
 const BoardMemebrs = [
   {
-    name: "Bringing Healthcare to Underserved Communities.",
+    name: "Bringing Healthcare to Underserved Communities",
     date: "March 01, 2025",
     image: "/home/news/image.png",
   },

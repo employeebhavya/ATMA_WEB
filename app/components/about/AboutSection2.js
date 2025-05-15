@@ -13,7 +13,7 @@ function AboutSection2() {
               <h3>01</h3>
               <div>
                 <h4 className="mb-1">The Beginning</h4>
-                <p>
+                <p className="text-justify">
                   ATMA was founded to build meaningful partnerships with
                   organizations that share our vision of advancing healthcare
                   access and supporting Tamil communities worldwide.
@@ -24,7 +24,7 @@ function AboutSection2() {
               <h3>02</h3>
               <div>
                 <h4 className="mb-1">Our Growth</h4>
-                <p>
+                <p className="text-justify">
                   We unite American Tamil physicians and allied healthcare
                   professionals under one platform to foster fellowship,
                   collaboration, and collective impact.
@@ -35,7 +35,7 @@ function AboutSection2() {
               <h3>03</h3>
               <div>
                 <h4 className="mb-1">Our Present Mission</h4>
-                <p>
+                <p className="text-justify">
                   We provide a space for our members to grow personally and
                   professionally while upholding our cultural, social, and
                   educational heritage. Through conventions, charitable work,

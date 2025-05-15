@@ -65,7 +65,7 @@ function AboutHome() {
                 </p>
               </div>
             </div>
-            <p>
+            <p className="text-justify">
               In January, 2005, a group of ten Tamil physicians in the United
               States established the American Tamil Medical Association (ATMA).
               Now there are more than 800 physicians and allied healthcare

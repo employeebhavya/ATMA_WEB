@@ -12,67 +12,67 @@ import {
 const BoardMemebrs = [
   {
     name: "Dr Veerappan Sundar, MD",
-    designation: "Chairman, ATMA.",
+    designation: "Chairman, ATMA",
     image: "/home/bm/1.jpg",
   },
   {
     name: "Dr. Ashok Kumar, MD",
-    designation: "ATMA Board Member, Chairman, Project Review Committee.",
+    designation: "ATMA Board Member, Chairman, Project Review Committee",
     image: "/home/bm/2.jpg",
   },
   {
     name: "Dr. Einstein Arunachalam, MD",
-    designation: "ATMA Board Member.",
+    designation: "ATMA Board Member",
     image: "/home/bm/3.jpg",
   },
   {
     name: "Dr. Parithival, MD",
-    designation: "ATMA Board Member.",
+    designation: "ATMA Board Member",
     image: "/home/bm/4.jpg",
   },
   {
     name: "Dr. Nedunchezian Sithian, MD",
-    designation: "Treasurer ATMA.",
+    designation: "Treasurer ATMA",
     image: "/home/bm/5.jpg",
   },
   {
     name: "Dr. Deeptha Nedunchezian, MD",
-    designation: "ATMA BOARD Member.",
+    designation: "ATMA BOARD Member",
     image: "/home/bm/6.jpg",
   },
   {
     name: "Dr. Rajan Dewar, MD",
-    designation: "ATMA Governor- Michigan Chapter.",
+    designation: "ATMA Governor- Michigan Chapter",
     image: "/home/bm/7.jpg",
   },
   {
     name: "Dr. Sivaraman Unni, M.D., F.A.C.P., F.A.C.G., A.G.A.F.",
-    designation: "ATMA Governor- Baltimore/ Greater Washington Chapter.",
+    designation: "ATMA Governor- Baltimore/ Greater Washington Chapter",
     image: "/home/bm/8.jpg",
   },
   {
     name: "Dr. Rama Raju, MD",
-    designation: "ATMA Governor- Newyork/New Jersey.",
+    designation: "ATMA Governor- Newyork/New Jersey",
     image: "/home/bm/image-6.jpg",
   },
   {
     name: "Dr. Raja Rathinam, MD",
-    designation: "ATMA Governor- Western Chapter.",
+    designation: "ATMA Governor- Western Chapter",
     image: "/home/bm/10.jpg",
   },
   {
     name: "Dr. Manivannan Verasamy, MD",
-    designation: "ATMA Governor- Georgia Chapter.",
+    designation: "ATMA Governor- Georgia Chapter",
     image: "/home/bm/11.jpg",
   },
   {
     name: "Dr. Priya Ramesh, MD",
-    designation: "ATMA Governor- Illinois Chapter.",
+    designation: "ATMA Governor- Illinois Chapter",
     image: "/home/bm/12.jpg",
   },
   {
     name: "Dr. Karunakaravel, MD",
-    designation: "ATMA governor- Ohio Chapter.",
+    designation: "ATMA governor- Ohio Chapter",
     image: "/home/bm/13.jpg",
   },
 ];

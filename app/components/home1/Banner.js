@@ -24,7 +24,7 @@ const Banner = () => {
       <div className={styles.content}>
         <div className="container">
           <h1>Welcome To American Tamil Medical Association</h1>
-          <p>
+          <p className="text-justify">
             Founded in 2005, ATMA is a nonprofit organization dedicated to
             connecting Tamil physicians and healthcare professionals across the
             U.S. Through medical camps, charitable initiatives, and educational

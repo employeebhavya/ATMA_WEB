@@ -2,9 +2,9 @@
   position: relative;
   padding: clamp(60px, 7vh, 7vh) 0;
   background-color: var(--color-white);
-  background-image: url("../../../public/gallery/content-bg.png");
+  /* background-image: url("../../../public/gallery/content-bg.png");
   background-position: right top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .GalleryContentRow {
   display: grid;

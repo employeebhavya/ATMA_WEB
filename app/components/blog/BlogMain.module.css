@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: clamp(20px, 2vw, 2vw);
-  row-gap: clamp(40px, 7vh, 7vh);
+  row-gap: clamp(40px, 9vh, 9vh);
 }
 .BlogMainCol {
   display: flex;

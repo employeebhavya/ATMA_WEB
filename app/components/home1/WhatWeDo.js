@@ -24,7 +24,7 @@ function WhatWeDo() {
               </div>
               <div className={styles.wwdIconBoxContent}>
                 <h4 className="mb-2">Vision</h4>
-                <p>
+                <p className="text-justify">
                   ATMA envisions accessible healthcare for all, uniting Tamil
                   healthcare professionals to drive global medical excellence
                   through collaboration and outreach.
@@ -42,7 +42,7 @@ function WhatWeDo() {
               </div>
               <div className={styles.wwdIconBoxContent}>
                 <h4 className="mb-2">Mission</h4>
-                <p>
+                <p className="text-justify">
                   We strive to improve healthcare access, support underserved
                   communities, and foster professional growth while upholding
                   Tamil values of compassion and service.
@@ -60,7 +60,7 @@ function WhatWeDo() {
               </div>
               <div className={styles.wwdIconBoxContent}>
                 <h4 className="mb-2">Donate</h4>
-                <p>
+                <p className="text-justify">
                   Your support helps provide medical aid, health education, and
                   outreach programs—creating a lasting impact and a healthier
                   future for all.

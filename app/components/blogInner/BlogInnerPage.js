@@ -21,7 +21,8 @@ function BlogInnerPage() {
             />
             <div className={styles.BlogInnerAuthor}>
               <p className={styles.flexCol}>
-                <FaUserAlt color="var(--primary)" /> <span>ATMA USA</span>
+                <FaUserAlt size={20} color="var(--primary)" />{" "}
+                <span>ATMA USA</span>
               </p>
               <p className={styles.flexCol}>
                 <MdOutlineDateRange color="var(--primary)" />
@@ -90,7 +91,7 @@ function BlogInnerPage() {
                 height={300}
               />
             </div>
-            <h3>ATMA’s Key Initiatives</h3>
+            <h3 className="mt-8">ATMA’s Key Initiatives</h3>
             <p>
               ATMA supports Tamil medical students with scholarships,
               mentorship, and career guidance. The association also conducts

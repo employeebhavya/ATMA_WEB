@@ -21,7 +21,7 @@ function AboutSection1() {
             <div className={styles.AboutSection1ColInner2}>
               {/* <p>ABOUT US</p> */}
               <h3>About Us</h3>
-              <p>
+              <p className="text-justify">
                 The American Tamil Medical Association (ATMA) is a nonprofit
                 organization founded to unite Tamil healthcare professionals
                 across the United States. With over 800 members, ATMA serves as
@@ -53,7 +53,7 @@ function AboutSection1() {
             <h3>
               Empowering Healthcare, <br></br>Embracing Heritage
             </h3>
-            <p>
+            <p className="text-justify">
               The Association was founded with a mission to unite Tamil
               healthcare professionals and leverage their expertise to improve
               healthcare access globally. Beyond organizing medical camps and
@@ -70,7 +70,7 @@ function AboutSection1() {
           <div className={styles.AboutSection1Col3}>
             <div className={styles.asBox}>
               <h4>Vision</h4>
-              <p>
+              <p className="text-justify">
                 The American Tamil Medical Association (ATMA) envisions a future
                 where healthcare is accessible to all, regardless of geographic
                 or economic barriers. Our goal is to create a strong network of
@@ -84,7 +84,7 @@ function AboutSection1() {
             </div>
             <div className={styles.asBox}>
               <h4>Mission</h4>
-              <p>
+              <p className="text-justify">
                 The American Tamil Medical Association (ATMA) is committed to
                 advancing healthcare and supporting Tamil communities worldwide
                 through medical expertise, charitable outreach, and professional
@@ -97,7 +97,7 @@ function AboutSection1() {
             </div>
             <div className={styles.asBox}>
               <h4>Donate</h4>
-              <p>
+              <p className="text-justify">
                 Your support can make a difference! By donating to the American
                 Tamil Medical Association (ATMA), you help us provide medical
                 aid, support health education, and organize outreach programs

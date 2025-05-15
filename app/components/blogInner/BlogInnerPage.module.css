@@ -11,7 +11,7 @@
 .BlogInnerPageCol {
   display: flex;
   flex-direction: column;
-  row-gap: clamp(20px, 2vh, 2vh);
+  row-gap: 4vh;
 }
 .BlogInnerPageImg {
   width: 100%;
@@ -44,6 +44,9 @@
   width: 100%;
   position: relative;
 }
+.BlogInnerPageCol svg {
+  width: clamp(15px, 0.9vw, 0.9vw);
+}
 
 @media only screen and (max-width: 1210px) {
   .BlogInnerPageRow {
@@ -55,5 +58,8 @@
   .imageColumn {
     grid-template-columns: 1fr;
     row-gap: 30px;
+  }
+  .BlogInnerPageCol {
+    row-gap: 25px;
   }
 }
