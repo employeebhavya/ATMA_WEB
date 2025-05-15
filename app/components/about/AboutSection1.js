@@ -20,7 +20,7 @@ function AboutSection1() {
             </div>
             <div className={styles.AboutSection1ColInner2}>
               {/* <p>ABOUT US</p> */}
-              <h3>ABOUT US</h3>
+              <h3>About Us</h3>
               <p>
                 The American Tamil Medical Association (ATMA) is a nonprofit
                 organization founded to unite Tamil healthcare professionals

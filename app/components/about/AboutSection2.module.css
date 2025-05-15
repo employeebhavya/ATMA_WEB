@@ -33,6 +33,10 @@
   grid-template-columns: 7% 1fr;
   column-gap: clamp(10px, 1vw, 1vw);
 }
+.numberBox h3,
+.numberBox h4 {
+  color: var(--primary);
+}
 
 @media only screen and (max-width: 800px) {
   .AboutSection2Row {
