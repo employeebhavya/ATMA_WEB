@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./AboutSection1.module.css";
+import Link from "next/link";
+import Button from "../Button";
 
 function AboutSection1() {
   return (
@@ -38,6 +40,13 @@ function AboutSection1() {
                 professional excellence with social responsibility to create a
                 lasting impact in the field of healthcare.
               </p>
+              <Link className="mt-2" href="/contact">
+                <Button
+                  text="Get In Touch"
+                  bgColor="var(--secondary)"
+                  color="var(--color-black)"
+                />
+              </Link>
             </div>
           </div>
           <div className={styles.AboutSection1Col2}>

@@ -4,7 +4,6 @@ import AboutSection1 from "../components/about/AboutSection1";
 import AboutSection2 from "../components/about/AboutSection2";
 import AboutSection3 from "../components/about/AboutSection3";
 import BoardMembers from "../components/home1/BoardMembers";
-import AboutSection4 from "../components/about/AboutSection4";
 
 function page() {
   return (
@@ -19,7 +18,6 @@ function page() {
       <AboutSection2 />
       {/* <AboutSection3 /> */}
       <BoardMembers />
-      <AboutSection4 />
     </>
   );
 }

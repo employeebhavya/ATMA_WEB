@@ -104,6 +104,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .banner {
+    min-height: 90vh;
+  }
   .title {
     font-size: 2rem;
   }

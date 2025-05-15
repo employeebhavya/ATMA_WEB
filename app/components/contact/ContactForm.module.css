@@ -42,7 +42,7 @@
   width: 100%;
   padding: clamp(12px, 1.5vw, 1.5vw);
   border: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #ccc;
   font-size: clamp(14px, 1.2vw, 11.2vw);
   outline: none;
 }
@@ -53,16 +53,18 @@
 }
 
 .submitButton {
+  background-color: #ed0000;
+  color: var(--text-color, #ffffff);
+  font-size: clamp(16px, 1vw, 1vw);
+  padding: clamp(8px, 0.8vw, 0.8vw) clamp(20px, 2vw, 2vw);
   width: fit-content;
-  padding: clamp(8px, 1.5vw, 1.5vw) clamp(16px, 2.5vw, 2.5vw);
-  background-color: #ffcc00;
   border: none;
-  font-size: clamp(14px, 1.2vw, 11.2vw);
+  border-radius: none;
   cursor: pointer;
-  color: #000;
-  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .submitButton:hover {
-  background-color: #e6b800;
+  background-color: var(--hover-bg-color, #ffc200);
+  color: var(--hover-txt-color, #000000);
 }

@@ -80,7 +80,7 @@ const ContactForm = () => {
 
   return (
     <div className={styles.contactFormContainer}>
-      <h2 className={styles.title}>Contact Form</h2>
+      <h2 className={styles.title}>Get In Touch</h2>
       <p className={styles.description}>
         Contact us today to learn more about our services!
       </p>

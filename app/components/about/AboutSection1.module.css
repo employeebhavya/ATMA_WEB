@@ -35,13 +35,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: clamp(20px, 2vw, 2vw);
-  padding: clamp(20px, 5vh, 5vh) 0;
+  padding: clamp(40px, 7vh, 7vh) 0;
 }
 .AboutSection1Col3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: clamp(20px, 2vw, 2vw);
-  margin-top: 20px;
 }
 .asBox {
   display: flex;

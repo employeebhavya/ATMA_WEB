@@ -53,6 +53,13 @@ function NewsHome() {
                 medicine. Learn how their contributions are shaping global
                 healthcare standards.
               </p>
+              <Link className="mt-2" href="/blogs/medical-association">
+                <Button
+                  text="Read More"
+                  bgColor="var(--secondary)"
+                  color="var(--color-black)"
+                />
+              </Link>
             </div>
             <div className={styles.nhCol2Inner2}>
               {BoardMemebrs.map((bm, index) => (
