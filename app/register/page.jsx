@@ -33,6 +33,7 @@ export default function MembershipForm() {
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [paypalReady, setPaypalReady] = useState(false);
   const [formValid, setFormValid] = useState(false);
+  const [showPaymentOptions, setShowPaymentOptions] = useState(false);
   const router = useRouter();
 
   // Validate form whenever formData changes
@@ -74,6 +75,8 @@ export default function MembershipForm() {
   };
 
   const getMembershipAmount = () => {
+    if (!formData.membershipType) return "0.00"; // Add this line
+
     switch (formData.membershipType) {
       case "lifetime":
         return "150.00";
@@ -82,10 +85,9 @@ export default function MembershipForm() {
       case "alliedHealth":
         return "100.00";
       default:
-        return "150.00";
+        return "0.00"; // Changed from "150.00" to "0.00"
     }
   };
-
   const createOrder = (data, actions) => {
     return actions.order.create({
       purchase_units: [
@@ -365,7 +367,6 @@ export default function MembershipForm() {
             </div>
           </div>
         </div>
-
         {/* Education & Training Section */}
         <div className="space-y-4 p-6 bg-gray-50 rounded-lg">
           <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
@@ -428,7 +429,6 @@ export default function MembershipForm() {
             />
           </div>
         </div>
-
         {/* Training Level Section */}
         <div className="space-y-4 p-6 bg-gray-50 rounded-lg">
           <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
@@ -526,7 +526,6 @@ export default function MembershipForm() {
             </div>
           )}
         </div>
-
         {/* Membership Categories Section */}
         <div className="space-y-4 p-6 bg-gray-50 rounded-lg">
           <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
@@ -590,7 +589,6 @@ export default function MembershipForm() {
             </div>
           </div>
         </div>
-
         {/* Terms and Conditions */}
         <div className="p-6 bg-gray-50 rounded-lg">
           <div className="flex items-start">
@@ -618,17 +616,33 @@ export default function MembershipForm() {
             </label>
           </div>
         </div>
-
         {/* Payment Section */}
-        {formData.membershipType && formData.agreeTerms && formValid && (
-          <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Payment
-            </h2>
-            <p className="text-lg font-medium mb-4">
-              Membership Fee: ${getMembershipAmount()}
-            </p>
 
+        <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">Payment</h2>
+          <p className="text-lg font-medium mb-4">
+            Membership Fee: ${getMembershipAmount()}
+          </p>
+
+          {!showPaymentOptions ? (
+            <div className="text-center">
+              <button
+                type="button"
+                onClick={() => {
+                  if (!formValid) {
+                    alert(
+                      "Please fill all required fields before proceeding to payment"
+                    );
+                    return;
+                  }
+                  setShowPaymentOptions(true);
+                }}
+                className="px-6 py-3 bg-[#dc1d46] !text-white hover:bg-[#f6f5f1] hover:!text-black"
+              >
+                Proceed to Payment
+              </button>
+            </div>
+          ) : (
             <div className="max-w-md mx-auto">
               <PayPalScriptProvider
                 options={{
@@ -641,7 +655,7 @@ export default function MembershipForm() {
                 }}
               >
                 <PayPalButtons
-                  fundingSource={undefined} // Let PayPal decide
+                  fundingSource={undefined}
                   style={{
                     layout: "vertical",
                     color: "gold",
@@ -653,13 +667,15 @@ export default function MembershipForm() {
                   onApprove={onApprove}
                   onError={(err) => {
                     console.error("PayPal error:", err);
+                    setShowPaymentOptions(false); // Reset payment options on error
                   }}
+                  onCancel={() => setShowPaymentOptions(false)} // Reset if user cancels
                   disabled={!formValid}
                 />
               </PayPalScriptProvider>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </form>
     </div>
   );
