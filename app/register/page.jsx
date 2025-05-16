@@ -89,28 +89,25 @@ export default function MembershipForm() {
     }
   };
   const createOrder = (data, actions) => {
-    // For testing purposes, we'll use 1 INR regardless of membership type
-    const testAmount = "1.00"; // 1 Rupee for testing
-
     return actions.order.create({
       purchase_units: [
         {
           amount: {
-            value: testAmount,
-            currency_code: "INR", // Changed to Indian Rupees
+            value: getMembershipAmount(),
+            currency_code: "USD",
             breakdown: {
               item_total: {
-                value: testAmount,
-                currency_code: "INR",
+                value: getMembershipAmount(),
+                currency_code: "USD",
               },
             },
           },
           items: [
             {
-              name: `AATMA ${formData.membershipType || "Test"} Membership`,
+              name: `AATMA ${formData.membershipType} Membership`,
               unit_amount: {
-                value: testAmount,
-                currency_code: "INR",
+                value: getMembershipAmount(),
+                currency_code: "USD",
               },
               quantity: "1",
               category: "DIGITAL_GOODS",
@@ -120,7 +117,6 @@ export default function MembershipForm() {
       ],
       application_context: {
         shipping_preference: "NO_SHIPPING",
-        brand_name: "AATMA", // Optional: Add your organization name
       },
     });
   };
@@ -651,7 +647,7 @@ export default function MembershipForm() {
               <PayPalScriptProvider
                 options={{
                   "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
-                  currency: "INR",
+                  currency: "USD",
                   intent: "capture",
                   components: "buttons,marks,funding-eligibility",
                   "enable-funding": "paylater,venmo,card",
