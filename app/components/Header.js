@@ -211,7 +211,7 @@ function Header() {
                   }
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Register
+                  Log In/Register
                 </Link>
               </div>
             ) : (
@@ -238,7 +238,7 @@ function Header() {
           {!isLoggedIn ? (
             <Link href="/register" className={styles.donationButton}>
               <Button
-                text="Register"
+                text="Log In/Register"
                 bgColor="var(--secondary)"
                 color="var(--color-white)"
                 hoverBgColor="var(--btn-hover)"
