@@ -74,3 +74,13 @@
     font-size: 15px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .nhCol2Inner2Inner {
+    grid-template-columns: 1fr;
+  }
+  .nhCol2Inner2Inner img {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
