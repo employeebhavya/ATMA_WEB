@@ -1,5 +1,4 @@
 import React from "react";
-import SliderHome from "./components/home1/SliderHome";
 import AboutHome from "./components/home1/AboutHome";
 import President from "./components/home1/President";
 import President2 from "./components/home1/President2";
@@ -14,7 +13,6 @@ function Home() {
   return (
     <>
       <Banner />
-      {/* <SliderHome /> */}
       <ThirukuralSlider />
       <AboutHome />
       <Vision />

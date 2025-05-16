@@ -25,6 +25,9 @@
   justify-content: space-between;
   row-gap: clamp(15px, 1.5vw, 1.5vw);
 }
+.visionCol img {
+  width: clamp(40px, 4vw, 4vw);
+}
 .counterRow {
   padding-top: clamp(60px, 12vh, 12vh);
 }

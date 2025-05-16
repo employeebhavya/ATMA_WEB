@@ -106,7 +106,7 @@ function AnnualConvention() {
                 width={300}
                 height={300}
               />
-              <h4 className="font-semibold">{item.title}</h4>
+              <h3>{item.title}</h3>
               <p>{item.desc}</p>
               {/* <Link href={item.link}>
                 <Button
