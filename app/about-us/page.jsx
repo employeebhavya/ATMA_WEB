@@ -2,8 +2,8 @@ import React from "react";
 import PageHead from "../components/PageHead";
 import AboutSection1 from "../components/about/AboutSection1";
 import AboutSection2 from "../components/about/AboutSection2";
-import AboutSection3 from "../components/about/AboutSection3";
 import BoardMembers from "../components/home1/BoardMembers";
+import Vision from "../components/home1/Vision";
 
 function page() {
   return (
@@ -15,8 +15,8 @@ function page() {
         mobileImage="/pageHeader/mobile.jpg"
       />
       <AboutSection1 />
+      <Vision />
       <AboutSection2 />
-      {/* <AboutSection3 /> */}
       <BoardMembers />
     </>
   );

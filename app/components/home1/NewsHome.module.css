@@ -1,7 +1,7 @@
 .NewsHome {
   position: relative;
   padding: clamp(60px, 15vh, 15vh) 0;
-  background-color: #f6f5f1;
+  background-color: var(--new-bg);
 }
 .nhRow {
   display: flex;

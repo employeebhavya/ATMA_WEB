@@ -70,48 +70,6 @@ function AboutSection1() {
               Tamil Nadu and beyond.
             </p>
           </div>
-          <div className={styles.AboutSection1Col3}>
-            <div className={styles.asBox}>
-              <h3>Vision</h3>
-              <p className="text-justify">
-                The American Tamil Medical Association (ATMA) envisions a future
-                where healthcare is accessible to all, regardless of geographic
-                or economic barriers. Our goal is to create a strong network of
-                Tamil healthcare professionals dedicated to driving positive
-                change in medical care and community health. By fostering
-                collaboration, knowledge-sharing, and humanitarian outreach, we
-                aim to empower communities, enhance global healthcare standards,
-                and uphold the values of service and rooted in our Tamil
-                heritage.
-              </p>
-            </div>
-            <div className={styles.asBox}>
-              <h3>Mission</h3>
-              <p className="text-justify">
-                The American Tamil Medical Association (ATMA) is committed to
-                advancing healthcare and supporting Tamil communities worldwide
-                through medical expertise, charitable outreach, and professional
-                collaboration. Our mission is to unite Tamil physicians and
-                healthcare professionals in the U.S. to improve healthcare
-                access, deliver medical aid to underserved communities, and
-                promote health awareness globally. We aim to foster professional
-                growth, provide educational opportunities.
-              </p>
-            </div>
-            <div className={styles.asBox}>
-              <h3>Donate</h3>
-              <p className="text-justify">
-                Your support can make a difference! By donating to the American
-                Tamil Medical Association (ATMA), you help us provide medical
-                aid, support health education, and organize outreach programs
-                for underserved communities. Every contribution, big or small,
-                empowers us to expand our efforts, deliver critical care, and
-                create a lasting impact in the lives of those in need. Join us
-                in building a healthier future — your generosity fuels our
-                mission to serve and uplift communities worldwide.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -1,8 +1,6 @@
 .AboutSection2 {
   position: relative;
-  padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--background);
-  padding-bottom: 0;
 }
 .AboutSection2Row {
   display: grid;

@@ -5,6 +5,7 @@
   max-width: 600px;
   margin: 0 auto;
   align-items: center;
+  position: relative;
 }
 
 .NewsletterForm .input {
@@ -18,6 +19,9 @@
 }
 
 .NewsletterForm .button {
+  position: absolute;
+  right: 0;
+  top: 0;
   padding: 14px;
   font-size: clamp(0.875rem, 1vw, 1vw);
   background-color: #faf2e9;

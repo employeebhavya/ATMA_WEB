@@ -2,7 +2,6 @@
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
-  padding-bottom: 0;
 }
 .AboutSection1Row {
   display: flex;
@@ -32,7 +31,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: clamp(20px, 2vw, 2vw);
-  padding: clamp(40px, 7vh, 7vh) 0;
+  padding-top: clamp(60px, 12vh, 12vh);
 }
 .AboutSection1Col3 {
   display: grid;
