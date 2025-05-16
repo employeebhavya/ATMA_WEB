@@ -11,13 +11,15 @@ function Footer() {
         <hr className={styles.footerHr} />
         <div className={styles.footerRow2}>
           <div className={styles.footerRow2Col1}>
-            <Image
-              className={styles.footerLogo}
-              src="/logos/logo.png"
-              alt="Logo"
-              width={300}
-              height={100}
-            />
+            <Link href={"/"}>
+              <Image
+                className={styles.footerLogo}
+                src="/logos/logo.png"
+                alt="Logo"
+                width={300}
+                height={100}
+              />
+            </Link>
             <p>
               The American Tamil Medical Association (ATMA) is a nonprofit
               organization founded to unite Tamil healthcare professionals

@@ -14,6 +14,7 @@ const Banner = () => {
           playsInline
           preload="auto"
           className={styles.video}
+          poster="/videoimg.webp"
         >
           {/* <source
             src={isMobile ? "/mobile-banner.mp4" : "/banner-video.mp4"}
