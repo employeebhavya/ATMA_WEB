@@ -12,6 +12,7 @@ function President() {
               alt="President"
               width={500}
               height={500}
+              quality={100}
             />
             <div className={styles.bannerRed}>
               <h6>Service to human is service to God</h6>

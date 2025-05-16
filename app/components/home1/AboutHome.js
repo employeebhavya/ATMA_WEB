@@ -83,7 +83,13 @@ function AboutHome() {
             </Link>
           </div>
           <div className={styles.ahRow2Col}>
-            <Image src="/home/about.png" alt="about" width={500} height={500} />
+            <Image
+              src="/home/about-new.png"
+              alt="about"
+              width={500}
+              height={500}
+              quality={100}
+            />
           </div>
         </div>
       </div>

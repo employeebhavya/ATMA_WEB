@@ -8,7 +8,13 @@ function ContactSection1() {
       <div className="container">
         <div className={styles.contactSection1Row}>
           <div className={styles.contactSection1Col}>
-            <Image src="/contact.png" alt="Contact" width={600} height={600} />
+            <Image
+              src="/contact.png"
+              alt="Contact"
+              width={600}
+              height={600}
+              quality={100}
+            />
           </div>
           <div className={styles.contactSection1Col2}>
             <ContactForm />

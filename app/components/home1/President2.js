@@ -37,6 +37,7 @@ function President() {
               alt="President"
               width={500}
               height={500}
+              quality={100}
             />
             <Image
               className="md:hidden"
@@ -44,6 +45,7 @@ function President() {
               alt="President"
               width={500}
               height={500}
+              quality={100}
             />
           </div>
         </div>
