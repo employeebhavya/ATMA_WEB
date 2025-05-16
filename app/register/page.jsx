@@ -625,7 +625,7 @@ export default function MembershipForm() {
           </p>
 
           {!showPaymentOptions ? (
-            <div className="text-center">
+            <div className="text-left md:text-center">
               <button
                 type="button"
                 onClick={() => {
