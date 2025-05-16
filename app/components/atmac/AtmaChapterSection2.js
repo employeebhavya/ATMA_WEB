@@ -10,7 +10,10 @@ function AtmaChapterSection2() {
       <div className="container">
         <div className={styles.AtmaChapterSection2Row}>
           <div className={styles.AtmaChapterSection2Col}>
-            <h3>OUR VISION</h3>
+            <h3>
+              Expanding ATMA’s Impact: Strengthening Chapters for a Healthier
+              Future{" "}
+            </h3>
             <p>
               ATMA aims to expand its reach by strengthening its chapters across
               the country. By building a strong network of Tamil medical

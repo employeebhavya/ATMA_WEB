@@ -100,10 +100,12 @@ function BlogMain() {
                 alt="Blog"
                 width={300}
                 height={300}
+                quality={100}
               />
+              <p className={styles.date}>{item.date}</p>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
-              <Link href={item.link}>
+              <Link className={styles.blogBtn} href={item.link}>
                 <Button
                   text="Read More"
                   bgColor="var(--secondary)"
@@ -112,7 +114,6 @@ function BlogMain() {
                   hoverTextColor="var(--primary)"
                 />
               </Link>
-              <p className={styles.date}>{item.date}</p>
             </div>
           ))}
         </div>

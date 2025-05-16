@@ -30,7 +30,10 @@ function AtmaChapterSection1() {
             />
           </div>
           <div className={styles.AtmaChapterSection1Col2}>
-            <h3>OUR MISSION</h3>
+            <h3>
+              Empowering Communities Through 20+ Years of Medical Outreach and
+              Education
+            </h3>
             <p>
               For over 20 years, ATMA has been committed to uplifting
               communities through medical outreach, education, and professional
@@ -42,7 +45,7 @@ function AtmaChapterSection1() {
               generation of healthcare professionals is well-equipped to serve
               the community.
             </p>
-            <div className={styles.iconBoxAtmac}>
+            {/* <div className={styles.iconBoxAtmac}>
               <div className={styles.iconAtmac}>
                 <Image src="/atmac/1.svg" alt="icon" width={50} height={50} />
                 <h4>Vision/Mission</h4>
@@ -59,7 +62,7 @@ function AtmaChapterSection1() {
                 <Image src="/atmac/4.svg" alt="icon" width={50} height={50} />
                 <h4>National and International</h4>
               </div>
-            </div>
+            </div> */}
             {/* <Link href="/">
               <Button
                 text="View More"

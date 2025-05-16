@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: clamp(20px, 2vw, 2vw);
-  row-gap: clamp(40px, 9vh, 9vh);
+  row-gap: clamp(60px, 12vh, 12vh);
 }
 .BlogMainCol {
   display: flex;
@@ -25,13 +25,12 @@
   text-transform: capitalize;
 }
 .BlogMainCol .date {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--primary);
-  padding: clamp(10px, 1vw, 1vw);
+  position: relative;
   text-transform: capitalize;
-  color: var(--color-white);
+  color: var(--grey);
+}
+.blogBtn {
+  margin-top: clamp(10px, 1vw, 1vw);
 }
 
 @media only screen and (max-width: 1024px) {

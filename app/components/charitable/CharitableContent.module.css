@@ -7,12 +7,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: clamp(40px, 4vw, 4vw);
-  row-gap: clamp(40px, 7vh, 7vh);
+  row-gap: clamp(40px, 9vh, 9vh);
 }
 .CharitableContentCol {
   display: flex;
   flex-direction: column;
-  row-gap: clamp(20px, 2vh, 2vh);
+  row-gap: clamp(10px, 1vh, 1vh);
 }
 .CharitableContentCol .CharitableContentImg {
   width: 100%;
