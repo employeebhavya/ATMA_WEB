@@ -1,23 +1,23 @@
-"use client";
+// "use client";
 
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import styles from "./Banner.module.css";
 import Link from "next/link";
 import Button from "../Button";
 
 const Banner = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+  // useEffect(() => {
+  //   const checkMobile = () => {
+  //     setIsMobile(window.innerWidth < 768);
+  //   };
 
-    checkMobile(); // initial check
-    window.addEventListener("resize", checkMobile);
+  //   checkMobile(); // initial check
+  //   window.addEventListener("resize", checkMobile);
 
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+  //   return () => window.removeEventListener("resize", checkMobile);
+  // }, []);
 
   return (
     <section className={styles.banner}>
@@ -31,10 +31,11 @@ const Banner = () => {
           preload="auto"
           className={styles.video}
         >
-          <source
+          {/* <source
             src={isMobile ? "/mobile-banner.mp4" : "/banner-video.mp4"}
             type="video/mp4"
-          />
+          /> */}
+          <source src={"/banner-video.mp4"} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

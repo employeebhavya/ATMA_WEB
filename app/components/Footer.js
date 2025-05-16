@@ -78,8 +78,8 @@ function Footer() {
             <h3>Directions</h3>
             <div className={styles.footerLinks}>
               <Link href="#">
-                American Tamil Medical Association ATMA 207 Benedict Rd, Staten
-                Island, NY 10304, USA
+                American Tamil Medical Association ATMA <br></br>207 Benedict
+                Rd, Staten Island, NY 10304, USA
               </Link>
             </div>
           </div>
