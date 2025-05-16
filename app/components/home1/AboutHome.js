@@ -76,7 +76,9 @@ function AboutHome() {
               <Button
                 text="Know More"
                 bgColor="var(--secondary)"
-                color="var(--color-black)"
+                color="var(--color-white)"
+                hoverBgColor="var(--btn-hover)"
+                hoverTextColor="var(--primary)"
               />
             </Link>
           </div>

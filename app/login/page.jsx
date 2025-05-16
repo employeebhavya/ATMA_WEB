@@ -137,7 +137,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full flex justify-center items-center py-3 px-4 text-sm font-medium rounded-lg !text-white bg-primary hover:bg-secondary hover:!text-gray-900 shadow-md transition-all duration-200 ${
+              className={`w-full flex justify-center items-center py-3 px-4 text-sm font-medium !text-white bg-primary hover:bg-[#f6f5f1] hover:!text-gray-900 shadow-md transition-all duration-200 ${
                 loading ? "opacity-70 cursor-not-allowed" : "hover:shadow-lg"
               }`}
             >

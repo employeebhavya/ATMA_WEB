@@ -107,7 +107,9 @@ function BlogMain() {
                 <Button
                   text="Read More"
                   bgColor="var(--secondary)"
-                  color="var(--color-black)"
+                  color="var(--color-white)"
+                  hoverBgColor="var(--btn-hover)"
+                  hoverTextColor="var(--primary)"
                 />
               </Link>
               <p className={styles.date}>{item.date}</p>

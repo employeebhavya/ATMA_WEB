@@ -51,7 +51,9 @@ function AtmaChapterSection2() {
               <Button
                 text="View More"
                 bgColor="var(--secondary)"
-                color="var(--color-black)"
+                color="var(--color-white)"
+                hoverBgColor="var(--color-white)"
+                hoverTextColor="var(--primary)"
               />
             </Link>
           </div>

@@ -1,7 +1,7 @@
 .AtmaChapterSection2 {
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
-  background-color: var(--background-1);
+  background-color: var(--new-bg);
 }
 .AtmaChapterSection2Row {
   display: grid;

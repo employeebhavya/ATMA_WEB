@@ -184,10 +184,10 @@ export default function MembershipForm() {
           <Link href="/login">
             <Button
               text="Login"
-              bgColor="var(--primary)"
+              bgColor="var(--secondary)"
               color="var(--color-white)"
-              hoverBgColor="var(--secondary)"
-              hoverTextColor="var(--color-black)"
+              hoverBgColor="var(--color-white)"
+              hoverTextColor="var(--primary)"
             />
           </Link>
         </div>

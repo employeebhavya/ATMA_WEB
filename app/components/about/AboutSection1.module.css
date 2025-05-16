@@ -2,9 +2,6 @@
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
-  /* background-image: url("../../../public/home/about-bg.png");
-  background-position: right top;
-  background-repeat: no-repeat; */
   padding-bottom: 0;
 }
 .AboutSection1Row {
@@ -45,22 +42,15 @@
 .asBox {
   display: flex;
   flex-direction: column;
-  row-gap: clamp(8px, 0.8vh, 0.8vh);
+  row-gap: clamp(15px, 1.5vh, 1.5vh);
   background-color: var(--background-1);
   padding: clamp(20px, 2vw, 2vw);
   transition: all 0.3s ease;
 }
-.AboutSection1Col3 .asBox:nth-child(1) {
-  background-color: var(--primary);
-}
-.AboutSection1Col3 .asBox:nth-child(1) h4,
-.AboutSection1Col3 .asBox:nth-child(1) p {
-  color: var(--color-white);
-}
 .asBox:hover {
   background-color: var(--primary);
 }
-.asBox:hover h4,
+.asBox:hover h3,
 .asBox:hover p {
   color: var(--color-white);
 }

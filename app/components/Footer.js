@@ -1,25 +1,13 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
-import NewsletterForm from "./NewsletterForm";
 import Link from "next/link";
+import NewsLetterSection from "./NewsLetterSection";
 
 function Footer() {
   return (
     <footer className={styles.footer}>
+      <NewsLetterSection />
       <div className="container">
-        <div className={styles.footerRow1}>
-          <div>
-            <h3>Join with us, subscribe our newsletter</h3>
-            <p className="mt-2">
-              Stay connected with ATMA! Subscribe to our newsletter for the
-              latest updates on medical initiatives, community outreach, and
-              professional opportunities.
-            </p>
-          </div>
-          <div>
-            <NewsletterForm />
-          </div>
-        </div>
         <hr className={styles.footerHr} />
         <div className={styles.footerRow2}>
           <div className={styles.footerRow2Col1}>

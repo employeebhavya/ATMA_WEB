@@ -239,10 +239,10 @@ function Header() {
             <Link href="/register" className={styles.donationButton}>
               <Button
                 text="Register"
-                bgColor="var(--primary)"
+                bgColor="var(--secondary)"
                 color="var(--color-white)"
-                hoverBgColor="var(--secondary)"
-                hoverTextColor="var(--color-black)"
+                hoverBgColor="var(--btn-hover)"
+                hoverTextColor="var(--primary)"
               />
             </Link>
           ) : (

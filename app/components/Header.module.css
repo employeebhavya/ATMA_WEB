@@ -83,7 +83,7 @@
     border-top: 1px solid var(--color-light-gray);
     max-height: 80vh; /* Set a max height so it fits within the screen */
     overflow-y: auto; /* Ensure links are scrollable if needed */
-    z-index: 1; /* Ensures the nav menu appears on top */
+    z-index: 9; /* Ensures the nav menu appears on top */
   }
 
   .navItem {

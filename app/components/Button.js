@@ -6,7 +6,7 @@ const Button = ({
   text = "Click me",
   bgColor = "#000",
   color = "#ffffff",
-  hoverBgColor = "#ed0000",
+  hoverBgColor = "#CF1941",
   hoverTextColor = "#ffffff",
 }) => {
   return (

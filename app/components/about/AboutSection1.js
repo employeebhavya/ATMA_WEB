@@ -44,7 +44,9 @@ function AboutSection1() {
                 <Button
                   text="Get In Touch"
                   bgColor="var(--secondary)"
-                  color="var(--color-black)"
+                  color="var(--color-white)"
+                  hoverBgColor="var(--btn-hover)"
+                  hoverTextColor="var(--primary)"
                 />
               </Link>
             </div>
@@ -69,7 +71,7 @@ function AboutSection1() {
           </div>
           <div className={styles.AboutSection1Col3}>
             <div className={styles.asBox}>
-              <h4>Vision</h4>
+              <h3>Vision</h3>
               <p className="text-justify">
                 The American Tamil Medical Association (ATMA) envisions a future
                 where healthcare is accessible to all, regardless of geographic
@@ -83,7 +85,7 @@ function AboutSection1() {
               </p>
             </div>
             <div className={styles.asBox}>
-              <h4>Mission</h4>
+              <h3>Mission</h3>
               <p className="text-justify">
                 The American Tamil Medical Association (ATMA) is committed to
                 advancing healthcare and supporting Tamil communities worldwide
@@ -96,7 +98,7 @@ function AboutSection1() {
               </p>
             </div>
             <div className={styles.asBox}>
-              <h4>Donate</h4>
+              <h3>Donate</h3>
               <p className="text-justify">
                 Your support can make a difference! By donating to the American
                 Tamil Medical Association (ATMA), you help us provide medical

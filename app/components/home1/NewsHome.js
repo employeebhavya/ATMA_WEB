@@ -7,17 +7,17 @@ const BoardMemebrs = [
   {
     name: "Bringing Healthcare to Underserved Communities",
     date: "March 01, 2025",
-    image: "/home/news/image.png",
+    image: "/home/news/1.webp",
   },
   {
     name: "How ATMA Supports Tamil Students in the Medical Field",
     date: "March 01, 2025",
-    image: "/home/news/image-1.png",
+    image: "/home/news/2.webp",
   },
   {
     name: "Advancements in Telemedicine and Its Impact on Rural Healthcare",
     date: "March 01, 2025",
-    image: "/home/news/image-2.png",
+    image: "/home/news/3.webp",
   },
 ];
 
@@ -40,7 +40,7 @@ function NewsHome() {
             <div className={styles.nhCol2Inner1}>
               <Image
                 className={styles.nhImgMain}
-                src="/home/news-left.png"
+                src="/home/news/main.webp"
                 alt="News"
                 width={300}
                 height={300}
@@ -57,7 +57,9 @@ function NewsHome() {
                 <Button
                   text="Read More"
                   bgColor="var(--secondary)"
-                  color="var(--color-black)"
+                  color="var(--color-white)"
+                  hoverBgColor="var(--color-white)"
+                  hoverTextColor="var(--primary)"
                 />
               </Link>
             </div>
@@ -78,7 +80,9 @@ function NewsHome() {
                       <Button
                         text="Read More"
                         bgColor="var(--secondary)"
-                        color="var(--color-black)"
+                        color="var(--color-white)"
+                        hoverBgColor="var(--color-white)"
+                        hoverTextColor="var(--primary)"
                       />
                     </Link>
                   </div>

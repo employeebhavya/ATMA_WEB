@@ -53,7 +53,7 @@
 }
 
 .submitButton {
-  background-color: #ed0000;
+  background-color: var(--secondary);
   color: var(--text-color, #ffffff);
   font-size: clamp(16px, 1vw, 1vw);
   padding: clamp(8px, 0.8vw, 0.8vw) clamp(20px, 2vw, 2vw);
@@ -65,6 +65,6 @@
 }
 
 .submitButton:hover {
-  background-color: var(--hover-bg-color, #ffc200);
-  color: var(--hover-txt-color, #000000);
+  background-color: #fff;
+  color: #000000;
 }

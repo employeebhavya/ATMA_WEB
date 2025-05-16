@@ -3,6 +3,14 @@
   padding: clamp(40px, 12vh, 12vh) 0;
   background-color: var(--color-white);
 }
+.nesletterSection {
+  position: relative;
+  background-image: url("../../public/pageHeader/desktop.jpg");
+  padding: clamp(40px, 9vh, 9vh) 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .footerRow1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -11,7 +19,7 @@
 }
 .footerHr {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
   margin: clamp(30px, 4vh, 4vh) 0;
 }
 .footerLogo {

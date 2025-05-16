@@ -2,9 +2,6 @@
   position: relative;
   padding: clamp(60px, 15vh, 15vh) 0;
   background-color: #f6f5f1;
-  /* background-image: url("../../../public/home/news-bg.png");
-  background-position: left top;
-  background-repeat: no-repeat; */
 }
 .nhRow {
   display: flex;
@@ -26,7 +23,8 @@
 }
 .nhCol2 {
   display: grid;
-  grid-template-columns: 1fr 1.63fr;
+  /* grid-template-columns: 1fr 1.63fr; */
+  grid-template-columns: 1fr 1fr;
   column-gap: clamp(20px, 2vw, 2vw);
 }
 .nhImgMain {
@@ -53,7 +51,7 @@
 }
 
 .nhCol2Inner2Inner img {
-  width: 15.8vw;
+  width: 18vw;
 }
 .nhCol2Inner2InnerContent h4 {
   margin-bottom: 12px;

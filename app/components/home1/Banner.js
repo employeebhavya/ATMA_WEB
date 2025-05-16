@@ -34,11 +34,11 @@ const Banner = () => {
           <div className={styles.buttonContainer}>
             <Link href="/contact">
               <Button
-                text="Join Now"
+                text="Know More"
                 bgColor="var(--secondary)"
-                color="var(--color-black)"
-                hoverBgColor="var(--primary)"
-                hoverTextColor="var(--color-white)"
+                color="var(--color-white)"
+                hoverBgColor="var(--color-white)"
+                hoverTextColor="var(--primary)"
               />
             </Link>
           </div>
