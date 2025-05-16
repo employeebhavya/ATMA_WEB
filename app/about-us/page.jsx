@@ -4,6 +4,7 @@ import AboutSection1 from "../components/about/AboutSection1";
 import AboutSection2 from "../components/about/AboutSection2";
 import BoardMembers from "../components/home1/BoardMembers";
 import Vision from "../components/home1/Vision";
+import VisionCounter from "../components/home1/VisionCounter";
 
 function page() {
   return (
@@ -16,6 +17,7 @@ function page() {
       />
       <AboutSection1 />
       <Vision />
+      <VisionCounter />
       <AboutSection2 />
       <BoardMembers />
     </>

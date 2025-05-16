@@ -3,6 +3,7 @@
   padding: clamp(60px, 12vh, 12vh) 0;
   background-image: linear-gradient(to bottom, transparent 50%, #fff 50%),
     url("../../../public/pageHeader/vision-bg.png");
+  padding-bottom: 0;
 }
 .visionMainRow {
   position: relative;
@@ -29,13 +30,19 @@
   width: clamp(40px, 4vw, 4vw);
 }
 .counterRow {
-  padding-top: clamp(60px, 12vh, 12vh);
+  padding: clamp(60px, 12vh, 12vh) 0;
 }
 .counterRow h2 {
   color: var(--primary);
 }
 
 @media only screen and (max-width: 767px) {
+  .visionSection {
+    background-image: url("../../../public/pageHeader/vision-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .visionRow {
     grid-template-columns: 1fr;
     max-width: 100%;
@@ -45,6 +52,6 @@
     padding: 60px 0;
   }
   .counterRow {
-    padding-top: 60px;
+    padding: 60px 0;
   }
 }

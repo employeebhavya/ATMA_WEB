@@ -8,6 +8,7 @@ import TestimonialSlider from "./components/home1/TestimonialSlider";
 import ThirukuralSlider from "./components/home1/Thirukural";
 import Banner from "./components/home1/Banner";
 import Vision from "./components/home1/Vision";
+import VisionCounter from "./components/home1/VisionCounter";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <ThirukuralSlider />
       <AboutHome />
       <Vision />
+      <VisionCounter />
       <President />
       <President2 />
       <BoardMembers />
