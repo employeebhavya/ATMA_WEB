@@ -16,6 +16,7 @@ function AtmaChapterSection3() {
               alt="AtmaChapterSection2"
               width={300}
               height={300}
+              quality={100}
             />
           </div>
           <div className={styles.AtmaChapterSection2Col}>

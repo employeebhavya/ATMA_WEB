@@ -51,6 +51,7 @@ function AboutSection2() {
               alt="About"
               width={300}
               height={300}
+              quality={100}
             />
           </div>
         </div>

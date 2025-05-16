@@ -41,4 +41,7 @@
     max-width: 100%;
     row-gap: 30px;
   }
+  .visionSection {
+    padding: 60px 0;
+  }
 }

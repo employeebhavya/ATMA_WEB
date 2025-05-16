@@ -45,6 +45,7 @@ function NewsHome() {
                 width={300}
                 height={300}
                 style={{ marginBottom: "15px" }}
+                quality={100}
               />
               <p style={{ color: "var(--grey)" }}>March 01, 2025</p>
               <h4>The Role of Tamil Physicians in Global Healthcare</h4>
@@ -72,6 +73,7 @@ function NewsHome() {
                     alt={bm.name}
                     width={300}
                     height={300}
+                    quality={100}
                   />
                   <div className={styles.nhCol2Inner2InnerContent}>
                     <p style={{ color: "var(--grey)" }}>{bm.date}</p>

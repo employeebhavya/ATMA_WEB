@@ -105,6 +105,7 @@ function AnnualConvention() {
                 alt="annual"
                 width={300}
                 height={300}
+                quality={100}
               />
               <h3>{item.title}</h3>
               <p>{item.desc}</p>

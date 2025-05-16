@@ -108,6 +108,7 @@ function BoardMembers() {
                       width={262}
                       height={285}
                       style={{ marginBottom: "15px" }}
+                      quality={100}
                     />
                     <h4>{bm.name}</h4>
                     <p>{bm.designation}</p>

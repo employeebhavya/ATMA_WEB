@@ -13,8 +13,8 @@
   font-size: clamp(0.875rem, 1vw, 1vw);
   border: none;
   outline: none;
-  background-color: #f1f1f1;
-  color: #333;
+  background-color: #a31534;
+  color: #fff;
 }
 
 .NewsletterForm .button {
@@ -52,6 +52,6 @@
     padding: 11.2px;
   }
   .NewsletterForm .input {
-    padding: 12px;
+    padding: 11.3px;
   }
 }

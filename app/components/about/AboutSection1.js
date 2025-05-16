@@ -16,6 +16,7 @@ function AboutSection1() {
                 alt="About"
                 width={300}
                 height={300}
+                quality={100}
               />
             </div>
             <div className={styles.AboutSection1ColInner2}>

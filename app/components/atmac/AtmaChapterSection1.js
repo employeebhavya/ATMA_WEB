@@ -21,7 +21,13 @@ function AtmaChapterSection1() {
         </div>
         <div className={styles.AtmaChapterSection1Row}>
           <div className={styles.AtmaChapterSection1Col}>
-            <Image src="/atmac/1.png" alt="Chapter" width={600} height={600} />
+            <Image
+              src="/atmac/1.png"
+              alt="Chapter"
+              width={600}
+              height={600}
+              quality={100}
+            />
           </div>
           <div className={styles.AtmaChapterSection1Col2}>
             <h3>OUR MISSION</h3>
