@@ -1,24 +1,8 @@
-// "use client";
-
-// import React, { useEffect, useState } from "react";
 import styles from "./Banner.module.css";
 import Link from "next/link";
 import Button from "../Button";
 
 const Banner = () => {
-  // const [isMobile, setIsMobile] = useState(false);
-
-  // useEffect(() => {
-  //   const checkMobile = () => {
-  //     setIsMobile(window.innerWidth < 768);
-  //   };
-
-  //   checkMobile(); // initial check
-  //   window.addEventListener("resize", checkMobile);
-
-  //   return () => window.removeEventListener("resize", checkMobile);
-  // }, []);
-
   return (
     <section className={styles.banner}>
       {/* Video Background */}
