@@ -119,7 +119,7 @@ export default function LoginPage() {
 
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <span className="text-sm text-gray-600">Not a Member?</span>
+              <p className="text-sm text-gray-600">Not a Member?</p>
             </div>
 
             <div className="text-sm">
