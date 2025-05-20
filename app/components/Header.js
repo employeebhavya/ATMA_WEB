@@ -236,49 +236,51 @@ function Header() {
           </nav>
 
           {/* Conditional button in header */}
-          <Link href="/donation" className={styles.donationButton}>
-            <Button
-              text="Donate"
-              bgColor="var(--btn-hover)"
-              color="var(--primary)"
-              hoverBgColor="var(--primary)"
-              hoverTextColor="var(--color-white)"
-            />
-          </Link>
-          {!isLoggedIn ? (
-            <Link href="/register" className={styles.donationButton}>
+          <div className="flex gap-2 xl:gap-4">
+            <Link href="/donation" className={styles.donationButton}>
               <Button
-                text="Log In/Register"
-                bgColor="var(--secondary)"
-                color="var(--color-white)"
-                hoverBgColor="var(--btn-hover)"
-                hoverTextColor="var(--primary)"
+                text="Donate"
+                bgColor="var(--btn-hover)"
+                color="var(--primary)"
+                hoverBgColor="var(--primary)"
+                hoverTextColor="var(--color-white)"
               />
             </Link>
-          ) : (
-            <button
-              onClick={handleLogout}
-              className={styles.donationButton}
-              style={{
-                background: "var(--primary)",
-                color: "var(--color-white)",
-                border: "none",
-                padding: "10px 20px",
-                cursor: "pointer",
-                transition: "all 0.3s ease",
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.background = "var(--secondary)";
-                e.currentTarget.style.color = "var(--color-black)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.background = "var(--primary)";
-                e.currentTarget.style.color = "var(--color-white)";
-              }}
-            >
-              Logout
-            </button>
-          )}
+            {!isLoggedIn ? (
+              <Link href="/register" className={styles.donationButton}>
+                <Button
+                  text="Log In/Register"
+                  bgColor="var(--secondary)"
+                  color="var(--color-white)"
+                  hoverBgColor="var(--btn-hover)"
+                  hoverTextColor="var(--primary)"
+                />
+              </Link>
+            ) : (
+              <button
+                onClick={handleLogout}
+                className={styles.donationButton}
+                style={{
+                  background: "var(--primary)",
+                  color: "var(--color-white)",
+                  border: "none",
+                  padding: "10px 20px",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.background = "var(--secondary)";
+                  e.currentTarget.style.color = "var(--color-black)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.background = "var(--primary)";
+                  e.currentTarget.style.color = "var(--color-white)";
+                }}
+              >
+                Logout
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </header>
