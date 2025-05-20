@@ -236,7 +236,7 @@ function Header() {
           </nav>
 
           {/* Conditional button in header */}
-          <div className="flex gap-2 xl:gap-4">
+          <div className={`flex gap-2 xl:gap-4 ${styles.dnone}`}>
             <Link href="/donation" className={styles.donationButton}>
               <Button
                 text="Donate"

@@ -60,7 +60,8 @@
 /* Mobile responsive styles */
 @media screen and (max-width: 1279px) {
   .nav,
-  .donationButton {
+  .donationButton,
+  .dnone {
     display: none;
   }
 
