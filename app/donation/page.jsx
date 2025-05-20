@@ -27,7 +27,7 @@ function page() {
               Your donation helps bring us closer to a healthier future for all.
             </p>
 
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
@@ -42,7 +42,7 @@ function page() {
                 breaking down barriers to healthcare and improving lives.
               </span>
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
@@ -57,7 +57,7 @@ function page() {
                 professionally and collaborate for a stronger healthcare system.
               </span>
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
@@ -77,7 +77,7 @@ function page() {
         <div className="mt-16">
           <div className="container">
             <h3 className="mb-4">How Your Donation Helps:</h3>
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
@@ -92,7 +92,7 @@ function page() {
                 clinics.
               </span>
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
@@ -108,7 +108,7 @@ function page() {
                 and basic healthcare.
               </span>
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
@@ -123,7 +123,7 @@ function page() {
                 communities with medical services.
               </span>
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
@@ -138,7 +138,7 @@ function page() {
                 hundreds of people in underserved areas.
               </span>
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 mb-2 2xl:gap-4">
               <Image
                 src="/tick.svg"
                 alt="AtmaChapterSection2"
