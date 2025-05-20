@@ -2,9 +2,6 @@
   position: relative;
   padding: clamp(60px, 12vh, 12vh) 0;
   background-color: var(--color-white);
-  /* background-image: url("../../../public/home/about-bg.png");
-  background-position: left bottom;
-  background-repeat: no-repeat; */
 }
 .ahRow1 {
   display: flex;
@@ -27,7 +24,6 @@
   background-color: #f6f5f1;
   padding: clamp(20px, 2vw, 2vw);
   transition: all 0.3s ease;
-  text-align: center;
 }
 .ahCol p {
   font-size: clamp(14px, 0.9vw, 0.9vw);

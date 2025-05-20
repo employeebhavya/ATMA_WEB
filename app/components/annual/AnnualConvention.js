@@ -86,7 +86,7 @@ function AnnualConvention() {
           <h3 className="md:min-w-[35%]">
             A Celebration of Knowledge, Culture, and Community
           </h3>
-          <p className="text-justify">
+          <p className="text-left">
             The ATMA Annual Convention is a landmark event that unites Tamil
             healthcare professionals across the U.S. and beyond. This gathering
             fosters medical excellence, networking, and cultural pride.

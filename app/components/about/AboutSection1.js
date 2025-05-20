@@ -22,7 +22,7 @@ function AboutSection1() {
             <div className={styles.AboutSection1ColInner2}>
               {/* <p>ABOUT US</p> */}
               <h3>About Us</h3>
-              <p className="text-justify">
+              <p className="text-left">
                 The American Tamil Medical Association (ATMA) is a nonprofit
                 organization founded to unite Tamil healthcare professionals
                 across the United States. With over 800 members, ATMA serves as
@@ -56,7 +56,7 @@ function AboutSection1() {
             <h3>
               Empowering Healthcare, <br></br>Embracing Heritage
             </h3>
-            <p className="text-justify">
+            <p className="text-left">
               The Association was founded with a mission to unite Tamil
               healthcare professionals and leverage their expertise to improve
               healthcare access globally. Beyond organizing medical camps and

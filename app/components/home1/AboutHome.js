@@ -49,7 +49,7 @@ function AboutHome() {
                   <sup style={{ marginRight: "10px", width: "85px" }}>
                     <RiDoubleQuotesL size={25} color="#a4a4a4" />
                   </sup>
-                  <span className="text-justify">
+                  <span className="text-left">
                     The compassion of a Tamilian knows no bounds; what began as
                     a small effort in America has now united hundreds of medical
                     professionals, becoming a pillar of humanity. Our knowledge
@@ -65,7 +65,7 @@ function AboutHome() {
                 </p>
               </div>
             </div>
-            <p className="text-justify">
+            <p className="text-left">
               In January, 2005, a group of ten Tamil physicians in the United
               States established the American Tamil Medical Association (ATMA).
               Now there are more than 800 physicians and allied healthcare

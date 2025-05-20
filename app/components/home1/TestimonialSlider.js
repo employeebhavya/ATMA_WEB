@@ -80,9 +80,7 @@ function TestimonialSlider() {
                 className={styles.image}
               />
               <div className={styles.content}>
-                <p className="text-justify">
-                  {testimonials[currentIndex].text}
-                </p>
+                <p className="text-left">{testimonials[currentIndex].text}</p>
                 <p style={{ color: "var(--grey)", marginTop: "10px" }}>
                   {testimonials[currentIndex].name} -{" "}
                   {testimonials[currentIndex].position}

@@ -22,7 +22,7 @@ function President() {
                 Lowell General Hospital/ TUFTS university
               </p>
             </div>
-            <p className="mt-4 text-justify">
+            <p className="mt-4 text-left">
               It is an honor to serve this vibrant community of compassionate
               Tamil healthcare professionals. Together, we will continue to
               expand our charitable impact and celebrate our shared heritage. I
