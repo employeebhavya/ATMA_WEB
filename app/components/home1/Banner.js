@@ -13,6 +13,7 @@ const Banner = () => {
           muted
           playsInline
           preload="auto"
+          webkit-playsinline="true"
           className={styles.video}
           poster="/videoimg.webp"
         >
