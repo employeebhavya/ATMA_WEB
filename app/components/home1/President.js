@@ -52,11 +52,11 @@ function President() {
             </p>
             <p className="text-left">
               Now we are in the process of conducting ATMA Convention, which is
-              conducted once in two years. This year it will be in Fresno,
-              California. The details will be delivered in the next month.
-              Please try to attend the convention and pass on the message to
-              your ATMA friends. I wish this convention would be a very
-              successful one, with all your cooperation.
+              conducted once in two years. This year, it will be held in Fresno,
+              California, from August 22 to 24, 2025. Please try to attend the
+              convention and pass on the message to your ATMA friends. I wish
+              this convention would be a very successful one, with all your
+              cooperation.
             </p>
             <p>Thanks for all your charitable work.</p>
           </div>

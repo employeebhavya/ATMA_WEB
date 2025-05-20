@@ -27,57 +27,111 @@ function AtmaChapterSection3() {
             </p>
             <div className={styles.checkBoxAtmac}>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>Strong leadership within each chapter</span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   A network of dedicated volunteers and medical professionals
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   Continuous community engagement through events and health
                   drives
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   Collaboration with hospitals, NGOs, and local organizations
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   Free medical camps and health screenings for underserved
                   populations
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   Educational workshops on disease prevention and healthy living
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   Scholarships and mentorship programs for aspiring medical
                   students
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   Disaster relief initiatives providing medical aid during
                   emergencies
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
                 <span>
                   Advocacy for public health policies and improved healthcare
                   access

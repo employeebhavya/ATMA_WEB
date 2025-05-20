@@ -113,6 +113,10 @@
   display: none;
 }
 
+.nav .navItem:nth-last-child(2) {
+  display: none;
+}
+
 .hasSubmenu .submenuIcon {
   margin-left: 8px;
   font-size: 14px;
@@ -164,6 +168,9 @@
 
   .submenu.open {
     display: block;
+  }
+  .nav .navItem:nth-last-child(2) {
+    display: block !important;
   }
 }
 .sticky {

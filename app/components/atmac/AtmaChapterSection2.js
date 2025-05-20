@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./AtmaChapterSection2.module.css";
-import { FaCheckCircle } from "react-icons/fa";
 import Button from "../Button";
 import Link from "next/link";
 
@@ -21,25 +20,53 @@ function AtmaChapterSection2() {
             </p>
             <div className={styles.checkBoxAtmac}>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
+
                 <span>Empowering communities with better healthcare</span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
+
                 <span>
                   Encouraging knowledge exchange among doctors and healthcare
                   experts
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
+
                 <span>
                   Offering training and workshops for upcoming medical
                   professionals
                 </span>
               </p>
               <p>
-                <FaCheckCircle />{" "}
+                <Image
+                  src="/tick.svg"
+                  alt="AtmaChapterSection2"
+                  width={15}
+                  height={15}
+                  quality={100}
+                />
+
                 <span>
                   Supporting underprivileged individuals through medical aid
                   programs

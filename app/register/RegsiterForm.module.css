@@ -19,4 +19,5 @@
 .circle {
   width: clamp(15px, 1vw, 1vw);
   height: clamp(15px, 1vw, 1vw);
+  color: var(--primary);
 }

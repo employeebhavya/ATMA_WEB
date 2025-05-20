@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TopBar from "./components/TopBar";
 import "./globals.css";
+import FloatingPhoneButton from "./components/FloatingPhoneButton";
 
 const marcellus = Marcellus({
   variable: "--font-marcellus",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <AutoSlider />
+        <FloatingPhoneButton phoneNumber="+1 213-545-4695" />
         <Footer />
         <BackToTop />
       </body>

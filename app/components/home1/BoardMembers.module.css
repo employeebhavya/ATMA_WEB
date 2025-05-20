@@ -52,7 +52,21 @@
   /*height: 100%;*/
   object-fit: cover;
 }
-
+.bmCol2Inner h4 {
+  font-size: clamp(17px, 1.1vw, 1.1vw);
+}
+.bmCol2Inner p {
+  font-size: clamp(14px, 1vw, 1vw);
+}
+.rightBorder::before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  right: -17%;
+  width: 0.09vw;
+  height: 50%;
+  background-color: #b3b3b3;
+}
 @media only screen and (max-width: 1024px) {
   .bmCol1Inner {
     width: 80%;
@@ -63,6 +77,9 @@
   }
   .bmCol2Inner {
     row-gap: clamp(10px, 1vh, 1vh);
+  }
+  .rightBorder::before {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {

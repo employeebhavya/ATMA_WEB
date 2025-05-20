@@ -1,13 +1,6 @@
 import Image from "next/image";
 import styles from "./BoardMembers.module.css";
 import Link from "next/link";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 const BoardMemebrs = [
   {
@@ -30,16 +23,21 @@ const BoardMemebrs = [
     designation: "ATMA Board Member",
     image: "/home/bm/4.jpg",
   },
-  {
-    name: "Dr. Nedunchezian Sithian, MD",
-    designation: "Treasurer ATMA",
-    image: "/home/bm/5.jpg",
-  },
+
   {
     name: "Dr. Deeptha Nedunchezian, MD",
     designation: "ATMA BOARD Member",
     image: "/home/bm/6.jpg",
   },
+];
+const treasurer = [
+  {
+    name: "Dr. Nedunchezian Sithian, MD",
+    designation: "Treasurer ATMA",
+    image: "/home/bm/5.jpg",
+  },
+];
+const governer = [
   {
     name: "Dr. Rajan Dewar, MD",
     designation: "ATMA Governor- Michigan Chapter",
@@ -76,15 +74,14 @@ const BoardMemebrs = [
     image: "/home/bm/13.jpg",
   },
 ];
-
 function BoardMembers() {
   return (
     <section className={styles.BoardMembers}>
       <div className={`container bm`}>
         <div className={styles.bmRow}>
-          <div className={styles.bmCol1}>
+          {/* <div className={styles.bmCol1}>
             <div className={styles.bmCol1Inner}>
-              <p className="font-light tracking-[3px]">BOARD MEMBERS</p>
+              <p className="font-light tracking-[3px]">LEADERSHIP</p>
               <h3>Our Board Members</h3>
               <p>
                 The following are our notable board members who contributed
@@ -92,15 +89,14 @@ function BoardMembers() {
                 to do the same.
               </p>
             </div>
-          </div>
-          <div className={styles.bmCol2}>
-            <Carousel>
-              <CarouselContent className="-ml-4">
+          </div> */}
+          <div className={`${styles.bmCol2} md:flex justify-between`}>
+            <div className={`md:w-[60%] relative ${styles.rightBorder}`}>
+              <p className="font-light tracking-[3px]">LEADERSHIP</p>
+              <h3>Our Board Members</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-10 mt-8">
                 {BoardMemebrs.map((bm, index) => (
-                  <CarouselItem
-                    key={index}
-                    className={`${styles.bmCol2Inner} md:pl-4 md:basis-1/4`}
-                  >
+                  <div key={index} className={`${styles.bmCol2Inner}`}>
                     <Image
                       className={styles.bmImg}
                       src={bm.image}
@@ -112,46 +108,84 @@ function BoardMembers() {
                     />
                     <h4>{bm.name}</h4>
                     <p>{bm.designation}</p>
-                    {/*<div className={styles.bmsocial}>
+                    <div className={styles.bmsocial}>
                       <Link href="#" target="_blank" rel="noopener noreferrer">
                         <Image
-                          src="/topbar/fb.svg"
+                          src="/topbar/linkedin.svg"
                           alt="Facebook"
                           width={25}
                           height={25}
                         />
                       </Link>
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
-                        <Image
-                          src="/topbar/insta.svg"
-                          alt="Facebook"
-                          width={25}
-                          height={25}
-                        />
-                      </Link>
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
-                        <Image
-                          src="/topbar/twitter.svg"
-                          alt="Facebook"
-                          width={25}
-                          height={25}
-                        />
-                      </Link>
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
-                        <Image
-                          src="/topbar/yt.svg"
-                          alt="Facebook"
-                          width={25}
-                          height={25}
-                        />
-                      </Link>
-                    </div>*/}
-                  </CarouselItem>
+                    </div>
+                  </div>
                 ))}
-              </CarouselContent>
-              <CarouselPrevious className="bg-primary !text-white text-xl hover:bg-secondary hover:!text-black" />
-              <CarouselNext className="bg-primary !text-white text-xl hover:bg-secondary hover:!text-black" />
-            </Carousel>
+              </div>
+            </div>
+            <div className="md:w-[19.1%] mt-8 md:mt-0">
+              <p className="font-light tracking-[3px]">LEADERSHIP</p>
+              <h3>Our Treasurer</h3>
+              <div className="mt-8">
+                {treasurer.map((bm, index) => (
+                  <div key={index} className={`${styles.bmCol2Inner}`}>
+                    <Image
+                      className={styles.bmImg}
+                      src={bm.image}
+                      alt={bm.name}
+                      width={262}
+                      height={285}
+                      style={{ marginBottom: "15px" }}
+                      quality={100}
+                    />
+                    <h4>{bm.name}</h4>
+                    <p>{bm.designation}</p>
+                    <div className={styles.bmsocial}>
+                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src="/topbar/linkedin.svg"
+                          alt="Facebook"
+                          width={25}
+                          height={25}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className={`${styles.bmCol2} mt-8`}>
+            <div className="">
+              <p className="font-light tracking-[3px]">LEADERSHIP</p>
+              <h3>Our Governors</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-10 mt-8">
+                {governer.map((bm, index) => (
+                  <div key={index} className={`${styles.bmCol2Inner}`}>
+                    <Image
+                      className={styles.bmImg}
+                      src={bm.image}
+                      alt={bm.name}
+                      width={262}
+                      height={285}
+                      style={{ marginBottom: "15px" }}
+                      quality={100}
+                    />
+                    <h4>{bm.name}</h4>
+                    <p>{bm.designation}</p>
+                    <div className={styles.bmsocial}>
+                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src="/topbar/linkedin.svg"
+                          alt="Facebook"
+                          width={25}
+                          height={25}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

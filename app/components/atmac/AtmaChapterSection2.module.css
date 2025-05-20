@@ -25,8 +25,8 @@
   align-items: center;
   column-gap: clamp(8px, 0.8vw, 0.8vw);
 }
-.checkBoxAtmac svg {
-  fill: var(--primary);
+.checkBoxAtmac p img {
+  width: clamp(15px, 1.2vw, 1.2vw);
 }
 .AtmaChapterSection2Col2 {
   position: relative;

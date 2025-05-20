@@ -78,6 +78,7 @@ function Header() {
     { name: "Gallery", path: "/gallery" },
     { name: "Blogs", path: "/blogs" },
     { name: "Contact Us", path: "/contact" },
+    { name: "Donate", path: "/donation" },
     // Register item will be conditionally rendered below
   ];
 
@@ -235,6 +236,15 @@ function Header() {
           </nav>
 
           {/* Conditional button in header */}
+          <Link href="/donation" className={styles.donationButton}>
+            <Button
+              text="Donate"
+              bgColor="var(--btn-hover)"
+              color="var(--primary)"
+              hoverBgColor="var(--primary)"
+              hoverTextColor="var(--color-white)"
+            />
+          </Link>
           {!isLoggedIn ? (
             <Link href="/register" className={styles.donationButton}>
               <Button

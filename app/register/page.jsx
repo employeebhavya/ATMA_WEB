@@ -208,7 +208,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  First Name*
+                  First Name<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="text"
@@ -224,7 +224,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Last Name*
+                  Last Name<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="text"
@@ -241,7 +241,7 @@ export default function MembershipForm() {
               <label
                 className={`${Styles.label} block text-sm font-medium text-gray-700`}
               >
-                Address*
+                Address<span className="text-[#dc1d46]">*</span>
               </label>
               <input
                 type="text"
@@ -258,7 +258,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  City*
+                  City<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="text"
@@ -274,7 +274,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  State*
+                  State<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="text"
@@ -290,7 +290,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Zip Code*
+                  Zip Code<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="text"
@@ -308,7 +308,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Gender*
+                  Gender<span className="text-[#dc1d46]">*</span>
                 </label>
                 <select
                   name="gender"
@@ -328,7 +328,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Mobile Phone*
+                  Mobile Phone<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="tel"
@@ -361,7 +361,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Email (Unique)*
+                  Email (Unique)<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="email"
@@ -377,7 +377,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Date of Birth*
+                  Date of Birth<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="date"
@@ -401,7 +401,8 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Medical School Graduation Year*
+                  Medical School Graduation Year
+                  <span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="number"
@@ -417,7 +418,7 @@ export default function MembershipForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Primary Speciality*
+                  Primary Speciality<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="text"
@@ -470,7 +471,8 @@ export default function MembershipForm() {
               <label
                 className={`${Styles.label} block text-sm font-medium text-gray-700`}
               >
-                Select your current status*
+                Select your current status
+                <span className="text-[#dc1d46]">*</span>
               </label>
 
               <div className="flex flex-wrap gap-8">
@@ -530,7 +532,8 @@ export default function MembershipForm() {
                   <label
                     className={`${Styles.label} block text-sm font-medium text-gray-700`}
                   >
-                    Anticipated Year of Completion*
+                    Anticipated Year of Completion
+                    <span className="text-[#dc1d46]">*</span>
                   </label>
                   <input
                     type="number"
@@ -548,7 +551,7 @@ export default function MembershipForm() {
                     <label
                       className={`${Styles.label} block text-sm font-medium text-gray-700`}
                     >
-                      Speciality*
+                      Speciality<span className="text-[#dc1d46]">*</span>
                     </label>
                     <input
                       type="text"
