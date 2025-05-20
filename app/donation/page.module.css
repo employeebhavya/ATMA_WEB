@@ -3,3 +3,8 @@
   height: fit-content;
   margin-top: 0.3vw;
 }
+@media only screen and (max-width: 768px) {
+  .tick {
+    margin-top: 5px;
+  }
+}

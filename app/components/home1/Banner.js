@@ -16,10 +16,6 @@ const Banner = () => {
           className={styles.video}
           poster="/videoimg.webp"
         >
-          {/* <source
-            src={isMobile ? "/mobile-banner.mp4" : "/banner-video.mp4"}
-            type="video/mp4"
-          /> */}
           <source src={"/banner-video.mp4"} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
