@@ -15,7 +15,7 @@ const Banner = () => {
           preload="auto"
           webkit-playsinline="true"
           className={styles.video}
-          poster="/videoimg.webp"
+          // poster="/videoimg.webp"
         >
           <source src={"/banner-video.mp4"} type="video/mp4" />
           Your browser does not support the video tag.
