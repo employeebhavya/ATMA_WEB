@@ -77,7 +77,7 @@ const governer = [
 function BoardMembers() {
   return (
     <section className={styles.BoardMembers}>
-      <div className={`container bm`}>
+      <div className={`container`}>
         <div className={styles.bmRow}>
           {/* <div className={styles.bmCol1}>
             <div className={styles.bmCol1Inner}>
@@ -94,7 +94,7 @@ function BoardMembers() {
             <div className={`md:w-[60%] relative ${styles.rightBorder}`}>
               <p className="font-light tracking-[3px]">LEADERSHIP</p>
               <h3>Our Board Members</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-10 mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-14 mt-8">
                 {BoardMemebrs.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
                     <Image
@@ -158,7 +158,7 @@ function BoardMembers() {
             <div className="">
               <p className="font-light tracking-[3px]">LEADERSHIP</p>
               <h3>Our Governors</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-10 mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-14 mt-8">
                 {governer.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
                     <Image
