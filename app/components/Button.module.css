@@ -5,7 +5,6 @@
   font-size: clamp(16px, 1vw, 1vw);
   padding: clamp(8px, 0.8vw, 0.8vw) clamp(20px, 2vw, 2vw);
   width: auto;
-  border: none;
   border-radius: none;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;

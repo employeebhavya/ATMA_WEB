@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useRouter } from "next/navigation";
 import Button from "../components/Button";
-import Link from "next/link";
 import Styles from "../register/RegsiterForm.module.css";
 
 export default function DonationForm() {

@@ -240,10 +240,11 @@ function Header() {
             <Link href="/donation" className={styles.donationButton}>
               <Button
                 text="Donate"
-                bgColor="var(--btn-hover)"
+                bgColor="transparent"
                 color="var(--primary)"
                 hoverBgColor="var(--primary)"
                 hoverTextColor="var(--color-white)"
+                className="border-1 border-solid border-primary"
               />
             </Link>
             {!isLoggedIn ? (

@@ -1,0 +1,5 @@
+.tick {
+  width: clamp(15px, 1.2vw, 1.2vw);
+  height: fit-content;
+  margin-top: clamp(5px, 0.5vw, 0.5vw);
+}

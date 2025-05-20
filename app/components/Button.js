@@ -8,6 +8,7 @@ const Button = ({
   color = "#ffffff",
   hoverBgColor = "#CF1941",
   hoverTextColor = "#ffffff",
+  className = "",
 }) => {
   return (
     <button
@@ -17,7 +18,7 @@ const Button = ({
         "--hover-bg-color": hoverBgColor,
         "--hover-txt-color": hoverTextColor,
       }}
-      className={styles.button}
+      className={`${styles.button} ${className}`}
     >
       {text}
     </button>
