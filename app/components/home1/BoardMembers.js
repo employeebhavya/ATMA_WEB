@@ -79,22 +79,11 @@ function BoardMembers() {
     <section className={styles.BoardMembers}>
       <div className={`container`}>
         <div className={styles.bmRow}>
-          {/* <div className={styles.bmCol1}>
-            <div className={styles.bmCol1Inner}>
-              <p className="font-light tracking-[3px]">LEADERSHIP</p>
-              <h3>Our Board Members</h3>
-              <p>
-                The following are our notable board members who contributed
-                wholeheartedly to ATMA’s successful journey and are continuing
-                to do the same.
-              </p>
-            </div>
-          </div> */}
           <div className={`${styles.bmCol2} md:flex justify-between`}>
             <div className={`md:w-[60%] relative ${styles.rightBorder}`}>
               <p className="font-light tracking-[3px]">LEADERSHIP</p>
               <h3>Our Board Members</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-14 mt-8">
+              <div className="max-w-2xs sm:max-w-full grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-14 mt-8">
                 {BoardMemebrs.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
                     <Image
@@ -125,7 +114,7 @@ function BoardMembers() {
             <div className="md:w-[19.1%] mt-8 md:mt-0">
               <p className="font-light tracking-[3px]">LEADERSHIP</p>
               <h3>Our Treasurer</h3>
-              <div className="mt-8">
+              <div className="max-w-2xs sm:max-w-full mt-8">
                 {treasurer.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
                     <Image
@@ -158,7 +147,7 @@ function BoardMembers() {
             <div className="">
               <p className="font-light tracking-[3px]">LEADERSHIP</p>
               <h3>Our Governors</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-14 mt-8">
+              <div className="max-w-2xs sm:max-w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-14 mt-8">
                 {governer.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
                     <Image

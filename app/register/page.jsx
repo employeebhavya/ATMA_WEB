@@ -475,7 +475,7 @@ export default function MembershipForm() {
                 <span className="text-[#dc1d46]">*</span>
               </label>
 
-              <div className="flex flex-wrap gap-8">
+              <div className="grid grid-cols-2 md:flex gap-4 md:gap-8">
                 {[
                   "Attending",
                   "Young Physician",
