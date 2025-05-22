@@ -38,7 +38,11 @@ function TopBar() {
                   height={25}
                 />
               </Link>
-              <Link href="#" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.youtube.com/@americantamilmedicalassoci4502"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/topbar/yt.svg"
                   alt="Facebook"

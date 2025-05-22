@@ -16,7 +16,12 @@ const VideoSection = () => {
     <section className="mb-[60px] md:mb-[15vh]">
       <div className="relative container w-full h-auto overflow-hidden group">
         {/* Video element with controls */}
-        <video ref={videoRef} controls className="w-full h-full object-cover">
+        <video
+          ref={videoRef}
+          controls
+          poster="/minister.webp"
+          className="w-full h-full object-cover"
+        >
           {/* Replace with your local video path */}
           <source src="/minister.mp4" type="video/mp4" />
           Your browser does not support the video tag.

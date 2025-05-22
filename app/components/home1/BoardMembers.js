@@ -40,7 +40,7 @@ const treasurer = [
     name: "Dr. Nedunchezian Sithian, MD",
     designation: "Treasurer ATMA",
     image: "/home/bm/5.jpg",
-    link: "#",
+    link: "https://www.linkedin.com/in/nedunchezian-sithian-332a73155/",
   },
 ];
 const governer = [
@@ -78,7 +78,7 @@ const governer = [
     name: "Dr. Priya Ramesh, MD",
     designation: "ATMA Governor - Illinois Chapter",
     image: "/home/bm/12.jpg",
-    link: "https://www.linkedin.com/in/dr-priya-ramesh-rokade-26701220a/",
+    link: "https://www.linkedin.com/in/priya-ramshesh-31aa461a9/",
   },
   {
     name: "Dr. Karunakaravel, MD",
