@@ -208,7 +208,7 @@ export default function DonationForm() {
                 <label
                   className={`${Styles.label} block text-sm font-medium text-gray-700`}
                 >
-                  Phone
+                  Phone<span className="text-[#dc1d46]">*</span>
                 </label>
                 <input
                   type="tel"
@@ -216,6 +216,7 @@ export default function DonationForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   className={`${Styles.input} mt-1 block w-full rounded-md border-gray-300 shadow-sm border`}
+                  required
                 />
               </div>
             </div>
