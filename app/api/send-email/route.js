@@ -43,9 +43,7 @@ export async function POST(request) {
           <h2 style="color: #2b6cb0;">Your Account Credentials</h2>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Password:</strong> ${password}</p>
-          <p style="font-size: 0.9em; color: #718096;">
-            For security reasons, we recommend changing your password after first login.
-          </p>
+          <p>Please keep your password secure and do not share it with anyone.</p>
         </div>
         
         <div style="margin: 20px 0;">
