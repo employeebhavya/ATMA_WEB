@@ -18,7 +18,7 @@ function President() {
               />
             </div>
             <div className={styles.bannerRed}>
-              <h6>Service to human is service to God</h6>
+              <h6>Service to Humanity is Service to God</h6>
               <Image
                 className="absolute -top-4 !w-6 left-4 !h-auto shadow-lg"
                 src={"/quote1.svg"}

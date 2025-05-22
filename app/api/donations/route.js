@@ -81,7 +81,7 @@ export async function POST(request) {
           </div>
           
           <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; font-size: 0.9em; color: #718096;">
-            <p>If you have any questions, please contact us at <a href="mailto:donations@atma.org" style="color: #3182ce;">donations@atma.org</a></p>
+            <p>If you have any questions, please contact us at <a href="mailto:Atmausapresident@gmail.com" style="color: #3182ce;">Atmausapresident@gmail.com</a></p>
             <p>© ${new Date().getFullYear()} American Tamil Medical Association. All rights reserved.</p>
           </div>
         </div>

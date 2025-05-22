@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema(
     emailVerified: { type: Boolean, default: false },
     role: { type: String, default: "member" },
     status: { type: String, default: "active" },
+    membershipAmount: { type: Number },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
     lastLogin: { type: Date },

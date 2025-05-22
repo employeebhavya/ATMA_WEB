@@ -57,8 +57,22 @@ export async function POST(request) {
       email,
       password: hashedPassword,
       membershipType: userData.membershipType || "unknown",
+      membershipAmount: getMembershipAmount(userData.membershipType), // Add this line
       trainingLevel: userData.trainingLevel || "unknown",
     });
+
+    function getMembershipAmount(membershipType) {
+      switch (membershipType) {
+        case "lifetime":
+          return 150.0;
+        case "medicalStudent":
+          return 75.0;
+        case "alliedHealth":
+          return 100.0;
+        default:
+          return 0.0;
+      }
+    }
 
     // Save user to database
     const savedUser = await newUser.save();

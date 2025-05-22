@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useRouter } from "next/navigation";
 import Button from "../components/Button";
@@ -36,6 +36,7 @@ export default function MembershipForm() {
   const [formValid, setFormValid] = useState(false);
   const [showPaymentOptions, setShowPaymentOptions] = useState(false);
   const router = useRouter();
+  const successMessageRef = useRef(null);
 
   // Validate form whenever formData changes
   useEffect(() => {
@@ -67,6 +68,12 @@ export default function MembershipForm() {
     setFormValid(isValid);
   }, [formData]);
 
+  useEffect(() => {
+    if (paymentSuccess && successMessageRef.current) {
+      successMessageRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [paymentSuccess]);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
@@ -80,11 +87,11 @@ export default function MembershipForm() {
 
     switch (formData.membershipType) {
       case "lifetime":
-        return "150.00";
+        return "150";
       case "medicalStudent":
-        return "75.00";
+        return "0.1";
       case "alliedHealth":
-        return "100.00";
+        return "100";
       default:
         return "0.00"; // Changed from "150.00" to "0.00"
     }
@@ -161,7 +168,10 @@ export default function MembershipForm() {
 
   if (paymentSuccess) {
     return (
-      <div className="max-w-md min-h-auto mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
+      <div
+        ref={successMessageRef}
+        className="max-w-md min-h-auto mx-auto mt-10 px-8 py-28 bg-green-50 shadow-md text-center"
+      >
         <h2 className="text-2xl font-bold text-green-700 mb-4">
           Payment Successful!
         </h2>

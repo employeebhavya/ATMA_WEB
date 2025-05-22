@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { IoCreateOutline } from "react-icons/io5";
+import { LockKeyhole } from "lucide-react";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -185,6 +186,15 @@ export default function LoginPage() {
                 </span>
               )}
             </button>
+            <div className="text-center mt-8">
+              <Link
+                href="/forgot-password"
+                className="text-sm text-gray-600 hover:text-primary flex items-center justify-center gap-1.5 transition-colors"
+              >
+                <LockKeyhole className="w-4 h-4" />
+                <span className="hover:underline">Forgot Password?</span>
+              </Link>
+            </div>
           </div>
         </form>
       </div>

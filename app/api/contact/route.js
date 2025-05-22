@@ -16,9 +16,9 @@ export async function POST(request) {
 
   // Email content for user
   const userMailOptions = {
-    from: `AATMA Contact <${process.env.ZOHO_MAIL_USER}>`,
+    from: `ATMA Contact <${process.env.ZOHO_MAIL_USER}>`,
     to: email,
-    subject: "Thank You for Contacting AATMA",
+    subject: "Thank You for Contacting ATMA",
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h1 style="color: #1a365d;">Thank You for Contacting Us, ${firstName}!</h1>
@@ -30,7 +30,7 @@ export async function POST(request) {
         </div>
         
         <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; font-size: 0.9em; color: #718096;">
-          <p>If you have any urgent inquiries, please contact us at <a href="mailto:support@aatma.org" style="color: #3182ce;">support@aatma.org</a></p>
+          <p>If you have any urgent inquiries, please contact us at <a href="mailto:Atmausapresident@gmail.com" style="color: #3182ce;">Atmausapresident@gmail.com</a></p>
           <p>© ${new Date().getFullYear()} American Tamil Medical Association. All rights reserved.</p>
         </div>
       </div>
@@ -39,7 +39,7 @@ export async function POST(request) {
 
   // Email content for president
   const presidentMailOptions = {
-    from: `AATMA Contact <${process.env.ZOHO_MAIL_USER}>`,
+    from: `ATMA Contact <${process.env.ZOHO_MAIL_USER}>`,
     to: "Atmausapresident@gmail.com",
     subject: `New Contact Form Submission: ${firstName} ${lastName}`,
     html: `
@@ -56,7 +56,7 @@ export async function POST(request) {
         </div>
         
         <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; font-size: 0.9em; color: #718096;">
-          <p>This email was automatically generated from the AATMA contact form.</p>
+          <p>This email was automatically generated from the ATMA contact form.</p>
         </div>
       </div>
     `,

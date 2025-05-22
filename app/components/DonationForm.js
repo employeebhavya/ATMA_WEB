@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useRouter } from "next/navigation";
 import Button from "../components/Button";
@@ -29,6 +29,7 @@ export default function DonationForm() {
   const [showPaymentOptions, setShowPaymentOptions] = useState(false);
   const [paypalReady, setPaypalReady] = useState(false);
   const router = useRouter();
+  const successMessageRef = useRef(null);
 
   const suggestedAmounts = [50, 100, 250, 500, 1000];
 
@@ -46,6 +47,11 @@ export default function DonationForm() {
     setFormValid(isValid);
   }, [formData]);
 
+  useEffect(() => {
+    if (paymentSuccess && successMessageRef.current) {
+      successMessageRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [paymentSuccess]);
   // Initialize PayPal when showing payment options
   useEffect(() => {
     if (showPaymentOptions) {
@@ -113,7 +119,10 @@ export default function DonationForm() {
 
   if (paymentSuccess) {
     return (
-      <div className="max-w-md min-h-auto mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
+      <div
+        ref={successMessageRef}
+        className="max-w-md min-h-auto mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center"
+      >
         <h2 className="text-2xl font-bold text-green-700 mb-4">
           Donation Successful!
         </h2>
