@@ -99,15 +99,17 @@ function AnnualConvention() {
         <div className={styles.annualConventionRow}>
           {AnnualData.map((item) => (
             <div className={styles.annualConventionCol} key={item.id}>
-              <Image
-                className={styles.annualConventionImg}
-                src={item.image}
-                alt="annual"
-                width={300}
-                height={300}
-                quality={100}
-              />
-              <h3>{item.title}</h3>
+              <div className="overflow-hidden relative">
+                <Image
+                  className={`${styles.annualConventionImg} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                  src={item.image}
+                  alt="annual"
+                  width={300}
+                  height={300}
+                  quality={100}
+                />
+              </div>
+              <h3 className="mt-4">{item.title}</h3>
               <p>{item.desc}</p>
               {/* <Link href={item.link}>
                 <Button

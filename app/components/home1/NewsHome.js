@@ -38,16 +38,19 @@ function NewsHome() {
           </div>
           <div className={styles.nhCol2}>
             <div className={styles.nhCol2Inner1}>
-              <Image
-                className={styles.nhImgMain}
-                src="/home/news/main.webp"
-                alt="News"
-                width={300}
-                height={300}
-                style={{ marginBottom: "15px" }}
-                quality={100}
-              />
-              <p style={{ color: "var(--grey)" }}>March 01, 2025</p>
+              <div className="overflow-hidden relative">
+                <Image
+                  className={`${styles.nhImgMain} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                  src="/home/news/main.webp"
+                  alt="News"
+                  width={300}
+                  height={300}
+                  quality={100}
+                />
+              </div>
+              <p className="mt-2" style={{ color: "var(--grey)" }}>
+                March 01, 2025
+              </p>
               <h4>The Role of Tamil Physicians in Global Healthcare</h4>
               <p>
                 Tamil doctors worldwide are making a significant impact in
@@ -67,14 +70,16 @@ function NewsHome() {
             <div className={styles.nhCol2Inner2}>
               {BoardMemebrs.map((bm, index) => (
                 <div key={index} className={styles.nhCol2Inner2Inner}>
-                  <Image
-                    className={styles.nhImg}
-                    src={bm.image}
-                    alt={bm.name}
-                    width={300}
-                    height={300}
-                    quality={100}
-                  />
+                  <div className="overflow-hidden relative">
+                    <Image
+                      className={`${styles.nhImg} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                      src={bm.image}
+                      alt={bm.name}
+                      width={300}
+                      height={300}
+                      quality={100}
+                    />
+                  </div>
                   <div className={styles.nhCol2Inner2InnerContent}>
                     <p style={{ color: "var(--grey)" }}>{bm.date}</p>
                     <h4>{bm.name}</h4>

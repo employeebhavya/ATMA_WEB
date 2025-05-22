@@ -31,22 +31,24 @@ function President() {
             </p>
           </div>
           <div className={styles.presidentCol2}>
-            <Image
-              className="hidden md:block"
-              src="/home/bm/president2.png"
-              alt="President"
-              width={500}
-              height={500}
-              quality={100}
-            />
-            <Image
-              className="md:hidden"
-              src="/home/bm/president2.jpg"
-              alt="President"
-              width={500}
-              height={500}
-              quality={100}
-            />
+            <div className="overflow-hidden relative">
+              <Image
+                className="hidden md:block transition-transform duration-1000 ease-in-out hover:scale-105"
+                src="/home/bm/president2.png"
+                alt="President"
+                width={500}
+                height={500}
+                quality={100}
+              />
+              <Image
+                className="md:hidden transition-transform duration-1000 ease-in-out hover:scale-105"
+                src="/home/bm/president2.jpg"
+                alt="President"
+                width={500}
+                height={500}
+                quality={100}
+              />
+            </div>
           </div>
         </div>
       </div>

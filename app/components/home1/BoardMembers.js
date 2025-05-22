@@ -7,27 +7,32 @@ const BoardMemebrs = [
     name: "Dr Veerappan Sundar, MD",
     designation: "Chairman, ATMA",
     image: "/home/bm/1.jpg",
+    link: "https://www.linkedin.com/in/veerappan-sundar-06739/",
   },
   {
     name: "Dr. Ashok Kumar, MD",
     designation: "ATMA Board Member, Chairman, Project Review Committee",
     image: "/home/bm/2.jpg",
+    link: "#",
   },
   {
     name: "Dr. Einstein Arunachalam, MD",
     designation: "ATMA Board Member",
     image: "/home/bm/3.jpg",
+    link: "https://www.linkedin.com/in/arunachalam-einstein-16037a87/",
   },
   {
     name: "Dr. Parithival, MD",
     designation: "ATMA Board Member",
     image: "/home/bm/4.jpg",
+    link: "#",
   },
 
   {
     name: "Dr. Deeptha Nedunchezian, MD",
     designation: "ATMA BOARD Member",
     image: "/home/bm/6.jpg",
+    link: "#",
   },
 ];
 const treasurer = [
@@ -35,6 +40,7 @@ const treasurer = [
     name: "Dr. Nedunchezian Sithian, MD",
     designation: "Treasurer ATMA",
     image: "/home/bm/5.jpg",
+    link: "#",
   },
 ];
 const governer = [
@@ -42,36 +48,43 @@ const governer = [
     name: "Dr. Rajan Dewar, MD",
     designation: "ATMA Governor- Michigan Chapter",
     image: "/home/bm/7.jpg",
+    link: "https://www.linkedin.com/in/rajan-dewar-28013120/",
   },
   {
     name: "Dr. Sivaraman Unni, M.D., F.A.C.P., F.A.C.G., A.G.A.F.",
     designation: "ATMA Governor- Baltimore/ Greater Washington Chapter",
     image: "/home/bm/8.jpg",
+    link: "#",
   },
   {
     name: "Dr. Rama Raju, MD",
     designation: "ATMA Governor- Newyork/New Jersey",
     image: "/home/bm/image-6.jpg",
+    link: "https://www.linkedin.com/in/rama-raju-b875781a/",
   },
   {
     name: "Dr. Raja Rathinam, MD",
     designation: "ATMA Governor- Western Chapter",
     image: "/home/bm/10.jpg",
+    link: "#",
   },
   {
     name: "Dr. Manivannan Verasamy, MD",
     designation: "ATMA Governor- Georgia Chapter",
     image: "/home/bm/11.jpg",
+    link: "https://www.linkedin.com/in/manivannan-veerasamy-09454b189/",
   },
   {
     name: "Dr. Priya Ramesh, MD",
     designation: "ATMA Governor- Illinois Chapter",
     image: "/home/bm/12.jpg",
+    link: "https://www.linkedin.com/in/dr-priya-ramesh-rokade-26701220a/",
   },
   {
     name: "Dr. Karunakaravel, MD",
     designation: "ATMA governor- Ohio Chapter",
     image: "/home/bm/13.jpg",
+    link: "https://www.linkedin.com/in/kk-2009/",
   },
 ];
 function BoardMembers() {
@@ -86,19 +99,24 @@ function BoardMembers() {
               <div className="max-w-2xs sm:max-w-full grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-14 mt-8">
                 {BoardMemebrs.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
-                    <Image
-                      className={styles.bmImg}
-                      src={bm.image}
-                      alt={bm.name}
-                      width={262}
-                      height={285}
-                      style={{ marginBottom: "15px" }}
-                      quality={100}
-                    />
-                    <h4>{bm.name}</h4>
+                    <div className="overflow-hidden relative">
+                      <Image
+                        className={`${styles.bmImg} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                        src={bm.image}
+                        alt={bm.name}
+                        width={262}
+                        height={285}
+                        quality={100}
+                      />
+                    </div>
+                    <h4 className="mt-4">{bm.name}</h4>
                     <p>{bm.designation}</p>
                     <div className={styles.bmsocial}>
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={bm.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image
                           src="/topbar/linkedin.svg"
                           alt="Facebook"
@@ -117,19 +135,24 @@ function BoardMembers() {
               <div className="max-w-2xs sm:max-w-full mt-8">
                 {treasurer.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
-                    <Image
-                      className={styles.bmImg}
-                      src={bm.image}
-                      alt={bm.name}
-                      width={262}
-                      height={285}
-                      style={{ marginBottom: "15px" }}
-                      quality={100}
-                    />
-                    <h4>{bm.name}</h4>
+                    <div className="overflow-hidden relative">
+                      <Image
+                        className={`${styles.bmImg} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                        src={bm.image}
+                        alt={bm.name}
+                        width={262}
+                        height={285}
+                        quality={100}
+                      />
+                    </div>
+                    <h4 className="mt-4">{bm.name}</h4>
                     <p>{bm.designation}</p>
                     <div className={styles.bmsocial}>
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={bm.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image
                           src="/topbar/linkedin.svg"
                           alt="Facebook"
@@ -150,19 +173,24 @@ function BoardMembers() {
               <div className="max-w-2xs sm:max-w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-14 mt-8">
                 {governer.map((bm, index) => (
                   <div key={index} className={`${styles.bmCol2Inner}`}>
-                    <Image
-                      className={styles.bmImg}
-                      src={bm.image}
-                      alt={bm.name}
-                      width={262}
-                      height={285}
-                      style={{ marginBottom: "15px" }}
-                      quality={100}
-                    />
-                    <h4>{bm.name}</h4>
+                    <div className="overflow-hidden relative">
+                      <Image
+                        className={`${styles.bmImg} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                        src={bm.image}
+                        alt={bm.name}
+                        width={262}
+                        height={285}
+                        quality={100}
+                      />
+                    </div>
+                    <h4 className="mt-4">{bm.name}</h4>
                     <p>{bm.designation}</p>
                     <div className={styles.bmsocial}>
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={bm.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image
                           src="/topbar/linkedin.svg"
                           alt="Facebook"

@@ -40,7 +40,7 @@ const DonationSchema = new mongoose.Schema(
 
     // Metadata
     donationDate: { type: Date, default: Date.now },
-    receiptSent: { type: Boolean, default: false },
+    receiptSent: { type: Boolean, default: true },
   },
   {
     timestamps: true,

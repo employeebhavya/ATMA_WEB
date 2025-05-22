@@ -68,7 +68,8 @@ export async function POST(request) {
   // Email content for the president (simplified version without password)
   const presidentMailOptions = {
     from: `AATMA Membership <${process.env.ZOHO_MAIL_USER}>`,
-    to: "Atmausapresident@gmail.com",
+    to: "atmausaweb@gmail.com",
+    // to: "Atmausapresident@gmail.com",
     subject: `New AATMA Member Registration: ${firstName} ${lastName}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

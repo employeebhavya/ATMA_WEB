@@ -83,13 +83,16 @@ function AboutHome() {
             </Link>
           </div>
           <div className={styles.ahRow2Col}>
-            <Image
-              src="/home/about-new.png"
-              alt="about"
-              width={500}
-              height={500}
-              quality={100}
-            />
+            <div className="overflow-hidden relative">
+              <Image
+                src="/home/about-new.png"
+                alt="about"
+                width={500}
+                height={500}
+                quality={100}
+                className="transition-transform duration-1000 ease-in-out hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </div>

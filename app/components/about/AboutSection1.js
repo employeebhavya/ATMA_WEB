@@ -10,14 +10,16 @@ function AboutSection1() {
         <div className={styles.AboutSection1Row}>
           <div className={styles.AboutSection1Col}>
             <div className={styles.AboutSection1ColInner}>
-              <Image
-                className={styles.AboutSection1ColInner1Img}
-                src="/about/about.png"
-                alt="About"
-                width={300}
-                height={300}
-                quality={100}
-              />
+              <div className="overflow-hidden relative">
+                <Image
+                  className={`${styles.AboutSection1ColInner1Img} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                  src="/about/about.png"
+                  alt="About"
+                  width={300}
+                  height={300}
+                  quality={100}
+                />
+              </div>
             </div>
             <div className={styles.AboutSection1ColInner2}>
               {/* <p>ABOUT US</p> */}

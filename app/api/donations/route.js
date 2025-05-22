@@ -66,7 +66,7 @@ export async function POST(request) {
           
           <div style="background-color: #ebf8ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h2 style="color: #2b6cb0;">Tax Deduction Information</h2>
-            <p>ATMA is a 501(c)(3) nonprofit organization (Tax ID: [YOUR_TAX_ID]).</p>
+            <p>ATMA is a 501(c)(3) nonprofit organization.</p>
             <p>No goods or services were provided in exchange for this contribution.</p>
             <p>This email serves as your receipt for tax purposes.</p>
           </div>

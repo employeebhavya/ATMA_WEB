@@ -161,7 +161,7 @@ export default function MembershipForm() {
 
   if (paymentSuccess) {
     return (
-      <div className="max-w-md min-h-screen mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
+      <div className="max-w-md min-h-auto mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
         <h2 className="text-2xl font-bold text-green-700 mb-4">
           Payment Successful!
         </h2>

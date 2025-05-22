@@ -4,6 +4,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useRouter } from "next/navigation";
 import Button from "../components/Button";
 import Styles from "../register/RegsiterForm.module.css";
+import Link from "next/link";
 
 export default function DonationForm() {
   const [formData, setFormData] = useState({
@@ -26,6 +27,7 @@ export default function DonationForm() {
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [formValid, setFormValid] = useState(false);
   const [showPaymentOptions, setShowPaymentOptions] = useState(false);
+  const [paypalReady, setPaypalReady] = useState(false);
   const router = useRouter();
 
   const suggestedAmounts = [50, 100, 250, 500, 1000];
@@ -43,6 +45,13 @@ export default function DonationForm() {
 
     setFormValid(isValid);
   }, [formData]);
+
+  // Initialize PayPal when showing payment options
+  useEffect(() => {
+    if (showPaymentOptions) {
+      setPaypalReady(true);
+    }
+  }, [showPaymentOptions]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -66,30 +75,10 @@ export default function DonationForm() {
           amount: {
             value: formData.amount,
             currency_code: "USD",
-            breakdown: {
-              item_total: {
-                value: formData.amount,
-                currency_code: "USD",
-              },
-            },
           },
-          items: [
-            {
-              name: `ATMA ${formData.donationType} Donation`,
-              description: formData.dedication || "General Donation",
-              unit_amount: {
-                value: formData.amount,
-                currency_code: "USD",
-              },
-              quantity: "1",
-              category: "DONATION",
-            },
-          ],
+          description: `ATMA ${formData.donationType} Donation`,
         },
       ],
-      application_context: {
-        shipping_preference: "NO_SHIPPING",
-      },
     });
   };
 
@@ -124,7 +113,7 @@ export default function DonationForm() {
 
   if (paymentSuccess) {
     return (
-      <div className="max-w-md min-h-screen mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
+      <div className="max-w-md min-h-auto mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center">
         <h2 className="text-2xl font-bold text-green-700 mb-4">
           Donation Successful!
         </h2>
@@ -136,12 +125,14 @@ export default function DonationForm() {
           Your support helps us provide healthcare to underserved communities.
         </p>
         <div className="mt-6">
-          <Button
-            text="Return to ATMA Website"
-            onClick={() => router.push("/")}
-            bgColor="var(--secondary)"
-            color="var(--color-white)"
-          />
+          <Link href="/">
+            <Button
+              text="Return to ATMA Website"
+              onClick={() => router.push("/")}
+              bgColor="var(--secondary)"
+              color="var(--color-white)"
+            />
+          </Link>
         </div>
       </div>
     );
@@ -530,11 +521,10 @@ export default function DonationForm() {
               >
                 I understand that my donation to the American Tamil Medical
                 Association (ATMA) is tax-deductible to the extent allowed by
-                law. ATMA is a 501(c)(3) nonprofit organization (Tax ID: [INSERT
-                TAX ID]). No goods or services were provided in exchange for
-                this contribution. I authorize ATMA to use my contact
-                information to send updates about their work (I may unsubscribe
-                at any time).
+                law. ATMA is a 501(c)(3) nonprofit organization. No goods or
+                services were provided in exchange for this contribution. I
+                authorize ATMA to use my contact information to send updates
+                about their work (I may unsubscribe at any time).
               </label>
             </div>
           </div>
@@ -568,20 +558,38 @@ export default function DonationForm() {
               </div>
             ) : (
               <div className="max-w-md mx-auto">
-                <PayPalScriptProvider
-                  options={{
-                    "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
-                    currency: "USD",
-                  }}
-                >
-                  <PayPalButtons
-                    style={{ layout: "vertical" }}
-                    createOrder={createOrder}
-                    onApprove={onApprove}
-                    onError={() => setShowPaymentOptions(false)}
-                    onCancel={() => setShowPaymentOptions(false)}
-                  />
-                </PayPalScriptProvider>
+                {paypalReady && (
+                  <PayPalScriptProvider
+                    options={{
+                      "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
+                      currency: "USD",
+                      intent: "capture",
+                      "data-sdk-integration-source": "integrationbuilder_sc",
+                      components: "buttons,funding-eligibility",
+                    }}
+                  >
+                    <PayPalButtons
+                      style={{
+                        layout: "vertical",
+                        color: "gold",
+                        shape: "rect",
+                        label: "paypal",
+                        height: 48,
+                      }}
+                      createOrder={createOrder}
+                      onApprove={onApprove}
+                      onError={(err) => {
+                        console.error("PayPal Error:", err);
+                        setShowPaymentOptions(false);
+                      }}
+                      onCancel={() => {
+                        console.log("Payment cancelled by user");
+                        setShowPaymentOptions(false);
+                      }}
+                      forceReRender={[formData.amount]}
+                    />
+                  </PayPalScriptProvider>
+                )}
               </div>
             )}
           </div>

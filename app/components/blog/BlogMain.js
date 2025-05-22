@@ -94,15 +94,17 @@ function BlogMain() {
         <div className={styles.BlogMainRow}>
           {BlogData.map((item) => (
             <div className={styles.BlogMainCol} key={item.id}>
-              <Image
-                className={styles.BlogMainImg}
-                src={item.image}
-                alt="Blog"
-                width={300}
-                height={300}
-                quality={100}
-              />
-              <p className={styles.date}>{item.date}</p>
+              <div className="overflow-hidden relative">
+                <Image
+                  className={`${styles.BlogMainImg} transition-transform duration-1000 ease-in-out hover:scale-105`}
+                  src={item.image}
+                  alt="Blog"
+                  width={300}
+                  height={300}
+                  quality={100}
+                />
+              </div>
+              <p className={`${styles.date} mt-4`}>{item.date}</p>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
               <Link className={styles.blogBtn} href={item.link}>

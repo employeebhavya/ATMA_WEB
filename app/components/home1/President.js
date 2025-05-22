@@ -7,13 +7,16 @@ function President() {
       <div className="container">
         <div className={styles.presidentRow}>
           <div className={styles.presidentCol1}>
-            <Image
-              src="/home/bm/president.jpg"
-              alt="President"
-              width={500}
-              height={500}
-              quality={100}
-            />
+            <div className="overflow-hidden relative">
+              <Image
+                src="/home/bm/president.jpg"
+                alt="President"
+                width={500}
+                height={500}
+                quality={100}
+                className="transition-transform duration-1000 ease-in-out hover:scale-105"
+              />
+            </div>
             <div className={styles.bannerRed}>
               <h6>Service to human is service to God</h6>
               <Image
