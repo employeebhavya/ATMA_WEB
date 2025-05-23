@@ -16,11 +16,9 @@ export default function DonationForm() {
     city: "",
     state: "",
     zip: "",
-    donationType: "general",
     amount: "",
     isRecurring: false,
     recurringFrequency: "monthly",
-    dedication: "",
     agreeTerms: false,
   });
 
@@ -82,7 +80,7 @@ export default function DonationForm() {
             value: formData.amount,
             currency_code: "USD",
           },
-          description: `ATMA ${formData.donationType} Donation`,
+          description: `ATMA Charitable Donation`,
         },
       ],
     });
@@ -121,7 +119,7 @@ export default function DonationForm() {
     return (
       <div
         ref={successMessageRef}
-        className="max-w-md min-h-auto mx-auto mt-10 p-6 bg-green-50 rounded-lg shadow-md text-center"
+        className="max-w-md min-h-auto mx-auto mt-10 px-8 py-20 bg-green-50 rounded-lg shadow-md text-center"
       >
         <h2 className="text-2xl font-bold text-green-700 mb-4">
           Donation Successful!
@@ -129,9 +127,6 @@ export default function DonationForm() {
         <p className="text-gray-700 mb-4">
           Thank you for your generous donation of ${formData.amount} to ATMA. A
           receipt has been sent to your email.
-        </p>
-        <p className="text-gray-600">
-          Your support helps us provide healthcare to underserved communities.
         </p>
         <div className="mt-6">
           <Link href="/">
@@ -290,84 +285,6 @@ export default function DonationForm() {
               Donation Details
             </h3>
 
-            <div>
-              <label
-                className={`${Styles.label} block text-sm font-medium text-gray-700 mb-2`}
-              >
-                Donation Purpose<span className="text-[#dc1d46]">*</span>
-              </label>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-center">
-                  <input
-                    type="radio"
-                    name="donationType"
-                    id="donation-general"
-                    value="general"
-                    checked={formData.donationType === "general"}
-                    onChange={handleChange}
-                    className={`${Styles.circle} h-4 w-4 text-[#dc1d46] focus:ring-[#dc1d46] border-gray-300`}
-                  />
-                  <label
-                    htmlFor="donation-general"
-                    className={`${Styles.label} ml-2 block text-sm text-gray-700`}
-                  >
-                    General Fund
-                  </label>
-                </div>
-                <div className="flex items-center">
-                  <input
-                    type="radio"
-                    name="donationType"
-                    id="donation-medicalCamp"
-                    value="medicalCamp"
-                    checked={formData.donationType === "medicalCamp"}
-                    onChange={handleChange}
-                    className={`${Styles.circle} h-4 w-4 text-[#dc1d46] focus:ring-[#dc1d46] border-gray-300`}
-                  />
-                  <label
-                    htmlFor="donation-medicalCamp"
-                    className={`${Styles.label} ml-2 block text-sm text-gray-700`}
-                  >
-                    Medical Camps
-                  </label>
-                </div>
-                <div className="flex items-center">
-                  <input
-                    type="radio"
-                    name="donationType"
-                    id="donation-scholarship"
-                    value="scholarship"
-                    checked={formData.donationType === "scholarship"}
-                    onChange={handleChange}
-                    className={`${Styles.circle} h-4 w-4 text-[#dc1d46] focus:ring-[#dc1d46] border-gray-300`}
-                  />
-                  <label
-                    htmlFor="donation-scholarship"
-                    className={`${Styles.label} ml-2 block text-sm text-gray-700`}
-                  >
-                    Scholarships
-                  </label>
-                </div>
-                <div className="flex items-center">
-                  <input
-                    type="radio"
-                    name="donationType"
-                    id="donation-disasterRelief"
-                    value="disasterRelief"
-                    checked={formData.donationType === "disasterRelief"}
-                    onChange={handleChange}
-                    className={`${Styles.circle} h-4 w-4 text-[#dc1d46] focus:ring-[#dc1d46] border-gray-300`}
-                  />
-                  <label
-                    htmlFor="donation-disasterRelief"
-                    className={`${Styles.label} ml-2 block text-sm text-gray-700`}
-                  >
-                    Disaster Relief
-                  </label>
-                </div>
-              </div>
-            </div>
-
             <div className="mt-4">
               <label
                 className={`${Styles.label} block text-sm font-medium text-gray-700 mb-2`}
@@ -491,22 +408,6 @@ export default function DonationForm() {
                   </div>
                 </div>
               )}
-            </div>
-
-            <div className="mt-4">
-              <label
-                className={`${Styles.label} block text-sm font-medium text-gray-700`}
-              >
-                Dedication (Optional)
-              </label>
-              <textarea
-                name="dedication"
-                value={formData.dedication}
-                onChange={handleChange}
-                rows={3}
-                className={`${Styles.input} mt-1 block w-full rounded-md border-gray-300 shadow-sm border`}
-                placeholder="In honor/memory of someone, or any special instructions"
-              />
             </div>
           </div>
 

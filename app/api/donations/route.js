@@ -28,14 +28,6 @@ export async function POST(request) {
     });
     const savedDonation = await newDonation.save();
 
-    // Determine donation purpose label
-    const donationLabels = {
-      general: "General Fund",
-      medicalCamp: "Medical Camps",
-      scholarship: "Scholarships",
-      disasterRelief: "Disaster Relief",
-    };
-
     // Email to donor
     const donorMailOptions = {
       from: `ATMA Donations <${process.env.ZOHO_MAIL_USER}>`,
@@ -50,17 +42,9 @@ export async function POST(request) {
           <div style="background-color: #f7fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h2 style="color: #2d3748;">Donation Details</h2>
             <p><strong>Amount:</strong> $${donationData.amount}</p>
-            <p><strong>Purpose:</strong> ${
-              donationLabels[donationData.donationType]
-            }</p>
             <p><strong>Transaction ID:</strong> ${
               donationData.transactionId
             }</p>
-            ${
-              donationData.dedication
-                ? `<p><strong>Dedication:</strong> ${donationData.dedication}</p>`
-                : ""
-            }
             <p><strong>Date:</strong> ${new Date().toLocaleDateString()}</p>
           </div>
           
@@ -104,9 +88,6 @@ export async function POST(request) {
       }</p>
             <p><strong>Email:</strong> ${donationData.email}</p>
             <p><strong>Amount:</strong> $${donationData.amount}</p>
-            <p><strong>Purpose:</strong> ${
-              donationLabels[donationData.donationType]
-            }</p>
             ${
               donationData.isRecurring
                 ? `<p><strong>Recurring:</strong> ${donationData.recurringFrequency}</p>`

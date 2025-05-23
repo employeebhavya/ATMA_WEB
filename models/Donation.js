@@ -15,12 +15,6 @@ const DonationSchema = new mongoose.Schema(
     zip: { type: String },
 
     // Donation details
-    donationType: {
-      type: String,
-      required: true,
-      enum: ["general", "medicalCamp", "scholarship", "disasterRelief"],
-      default: "general",
-    },
     amount: { type: Number, required: true },
     isRecurring: { type: Boolean, default: false },
     recurringFrequency: {
@@ -28,7 +22,6 @@ const DonationSchema = new mongoose.Schema(
       enum: ["monthly", "quarterly", "yearly"],
       default: "monthly",
     },
-    dedication: { type: String },
 
     // Payment information
     transactionId: { type: String, required: true },
@@ -50,7 +43,6 @@ const DonationSchema = new mongoose.Schema(
 // Create index for faster queries
 DonationSchema.index({ email: 1 });
 DonationSchema.index({ donationDate: -1 });
-DonationSchema.index({ donationType: 1 });
 
 export default mongoose.models.Donation ||
   mongoose.model("Donation", DonationSchema);
