@@ -81,7 +81,7 @@ function Footer() {
             </div>
           </div>
           <div className={styles.footerRow2Col1}>
-            <h3>Directions</h3>
+            <h3>Mailing Address</h3>
             <div className={styles.footerLinks}>
               <Link href="#">
                 American Tamil Medical Association ATMA <br></br>207 Benedict
