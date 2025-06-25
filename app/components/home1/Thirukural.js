@@ -118,7 +118,10 @@ function ThirukuralSlider() {
   // Auto-slide effect
   useEffect(() => {
     const interval = setInterval(() => {
-      handleNext();
+      setIsAnimating(true);
+      setCurrentIndex((prevIndex) =>
+        prevIndex === thirukurals.length - 1 ? 0 : prevIndex + 1
+      );
     }, 4000);
 
     return () => clearInterval(interval);
