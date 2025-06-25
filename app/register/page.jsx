@@ -112,7 +112,7 @@ export default function MembershipForm() {
           },
           items: [
             {
-              name: `AATMA ${formData.membershipType} Membership`,
+              name: `ATMA ${formData.membershipType} Membership`,
               unit_amount: {
                 value: getMembershipAmount(),
                 currency_code: "USD",
@@ -176,7 +176,7 @@ export default function MembershipForm() {
           Payment Successful!
         </h2>
         <p className="text-gray-700 mb-4">
-          Thank you for registering with AATMA. Your account details have been
+          Thank you for registering with ATMA. Your account details have been
           sent to your email.
         </p>
         <p className="text-gray-600">Redirecting to login page...</p>
@@ -658,11 +658,11 @@ export default function MembershipForm() {
                 className={`${Styles.label} ml-3 block text-sm text-gray-700`}
               >
                 The information provided in this application is true and
-                correct. I understand that the AATMA (American Tamil Medical
+                correct. I understand that the ATMA (American Tamil Medical
                 Association) Membership Committee will review my information. If
-                found not eligible for AATMA membership, I acknowledge that the
-                fees paid are non-refundable. As a member of AATMA, I will abide
-                by the AATMA Bylaws and Its Articles of Incorporation.
+                found not eligible for ATMA membership, I acknowledge that the
+                fees paid are non-refundable. As a member of ATMA, I will abide
+                by the ATMA Bylaws and Its Articles of Incorporation.
               </label>
             </div>
           </div>

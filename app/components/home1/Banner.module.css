@@ -19,7 +19,7 @@
   z-index: -1;
   min-width: 100%;
   min-height: 100%;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .video {
@@ -29,7 +29,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .content {

@@ -57,7 +57,7 @@ const governer = [
     link: "#",
   },
   {
-    name: "Dr. Rama Raju, MD",
+    name: "Dr. Ram Raju, MD",
     designation: "ATMA Governor - New York / New Jersey",
     image: "/home/bm/image-6.jpg",
     link: "https://www.linkedin.com/in/rama-raju-b875781a/",
